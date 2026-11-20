@@ -1,18 +1,22 @@
 #!/usr/bin/env node
 /**
- * Builds public/puzzles.json from:
- *  - data/emote-set.json (7TV emote set of baulo)
- *  - data/chatstats.json (StreamElements chat usage stats for baulo)
- *  - data/defs/sheet_*.json (visual definitions, descriptions, charade parts, flags)
- *
- * Output is 100% deterministic for the same inputs.
+ * Builds public/puzzles.json using ONLY high-usage and actively recognized
+ * 7TV emotes from baulo's Kick/Twitch channel:
+ *  - Tier 1 (Top most-used, >5% relative to #1 in StreamElements chatstats):
+ *    harder hand-crafted context-driven clues from data/curated-clues.json
+ *  - All 15 numeric emotes (11..99):
+ *    high-school level logic & math riddles from data/curated-clues.json
+ *  - All short emotes (<= 5 chars) in the active roster:
+ *    harder hand-crafted context-driven clues from data/curated-clues.json
+ *  - Remaining active high-usage (>=15k SE uses) & Kick-era baulo staples:
+ *    accessible context-aware cryptic clues
+ *  - Low-usage / obscure emotes from the 975-emote set are strictly excluded.
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { rngFor, pick, shuffle } from './lib/rng.mjs';
-import { numberToWords } from './lib/numbers.mjs';
 import { WORDS_BY_LETTER, FILLER } from './lib/words.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -20,27 +24,144 @@ const ROOT = path.resolve(__dirname, '..');
 
 const VALID_NAME_RE = /^[A-Za-zÑñ]+$|^[0-9]+$/;
 const MAX_PLAYABLE_LEN = 16;
-const MIN_PLAYABLE_LEN = 2;
+const MIN_SE_USES = 15000; // Excludes low-usage tail (<15k uses out of 32.1M msgs)
 
-// Known baulo / Kick-era signature patterns & iconic channel emotes (for Tier 2 boost)
-const CHANNEL_KEYWORDS = [
-  'baulo', 'bauti', 'barto', 'coco', 'kenny', 'walti', 'argentina', 'mate',
-  'fulbo', 'davo', 'cobra', 'cobrix', 'momo', 'coscu', 'yuta', 'messi',
-  'maradona', 'zidane', 'cristiano', 'bellingham', 'barovero', 'fabbiani',
-  'latorre', 'peron', 'fort', 'demente', 'tade', 'potge', 'xdd', 'dans',
-  'peepo', 'monka', 'sadge', 'okayge', 'susge', 'prayge', 'madge', 'wide',
-  'cine', 'cooking', 'peak', 'tweak', 'banger', 'void', 'ragebait', 'cooked',
-  'slay', 'jarvis', 'andapaya', 'tengounplan', 'ionovoy', 'iotelo', 'iatelo',
-  'maravillosa', 'emociona', 'amarilla', 'roja', 'postura', 'saltito', 'muelto',
-  'sentao', 'amimir', 'chilling', 'calma', 'siu', 'kek', 'lol', 'pog', 'pag',
-];
+// Explicitly exclude niche/tiny emotes even if historical SE count was high
+const EXCLUDED_OBSCURE = new Set(['pL', 'ppOverheat', 'pepeAgony']);
+
+// Actively used Kick-era & baulo-signature emotes (not tracked by Twitch-era SE stats)
+const KICK_ACTIVE_STAPLES = new Set([
+  'BauloVibe', 'BauloSit', 'baulodance', 'bauloCrashOut', 'bauloTilt', 'bauloWar',
+  'GIGABAULO', 'GOBAULOGO', 'bautiquit', 'bautrollface', 'bauloywalter', 'bDANCE',
+  'bKEK', 'bSAD', 'coco', 'kenny', 'walti', 'barto', 'voidbarto', 'bartoB',
+  'CINE', 'COOKING', 'PEAK', 'TWEAK', 'BANGER', 'VOID', 'Voidge', 'Cooked',
+  'ragebait', 'SLAY', 'JARVIS', 'BELLINGHAM', 'FULBO', 'ANDAPAYABOBO', 'TENGOUNPLAN',
+  'davoDance', 'cobrixDance', 'cobraCrashOut', 'davojam', 'momoClap', 'dans', 'dansi',
+  'xdding', 'Potge', 'emociona', 'SIU', 'CALMA', 'FINALLY', 'KEK', 'BRAINROT',
+  'AINTNOWAY', 'CAUGHT', 'YAPPING', 'Postura', 'ionovoyadecirlo', 'iotelodije',
+  'iatelodije', 'nomelocreo', 'muelto', 'sentao', 'amimir', 'Saltito', 'AMARILLA',
+  'ROJA', 'LIBERTAD', 'Washed', 'Chilling', 'Panic', 'DeadChat', 'TICTAC', 'FOCUS',
+  'Firmo', 'NOESTOYACABADO', 'MEQUEDODORMIDO', 'WhoAsked', 'LOL', 'PAIN', 'PLEASE',
+  'monkaOMEGA', 'Aware', 'Clueless', 'COPIUM', 'GoodMorning', 'GoodNight', 'Offline',
+  'Life', 'Death', 'Weirdge', 'catKISS', 'FeelsCringeMan', 'FeelsBadMan', 'PagMan',
+  'popCat', 'Smoge',
+]);
+
+// Context-rich chat-usage definitions for longer active emotes (replaces purely literal descriptions)
+const USAGE_CONTEXT_DEFS = {
+  modCheck: 'cuando nadie responde o falta alguien en el chat',
+  StockExplosion: 'remate explosivo tras un golpe o fallo épico',
+  nyanPls: 'festejo anime cuando suena música alegre',
+  Stronge: 'aguante estoico del chat pese al sufrimiento',
+  Pepega: 'reacción clásica ante un despiste o error tonto',
+  xqcCheer: 'aliento frenético del chat en momentos de hype',
+  ZIDANE: 'incredulidad absoluta ante una jugada o fallo épico',
+  LETSGO: 'euforia máxima para celebrar una gran victoria',
+  SadChamp: 'decepción silenciosa cuando algo sale mal',
+  SoConcerned: 'preocupación seria cuando algo da muy mala espina',
+  Drained: 'agotamiento total sin energía en el chat',
+  peepoArgentina: 'orgullo albiceleste de la comunidad en el chat',
+  HulkPls: 'baile desenfrenado cuando sube el ritmo musical',
+  BASEDCIGAR: 'aprobación elegante a una opinión sin rodeos',
+  Chadge: 'confianza aplastante tras una respuesta magistral',
+  turrosPls: 'baile de barrio cuando suena cumbia en directo',
+  ESKIZO: 'reacción cuando alguien dice algo totalmente desquiciado',
+  peepoFlower: 'detalle cariñoso del chat para el streamer',
+  BRUHMM: 'incredulidad muda ante un comentario absurdo',
+  imNOTcrying: 'disimular la emoción en un momento conmovedor',
+  VEGETA: 'derrota dramática y melancólica bajo la lluvia',
+  PagChomp: 'asombro clásico del chat ante algo increíble',
+  PauseChamp: 'suspenso del chat esperando un gran anuncio',
+  Okayge: 'conformidad serena y buena onda en el chat',
+  AlienPls: 'baile espacial clásico cuando suena un temazo',
+  GIGACHAD: 'respeto absoluto ante una actitud imponente',
+  lebronJAM: 'disfrutar un temazo moviendo la cabeza al ritmo',
+  WAITING: 'espera eterna cuando el directo o algo tarda',
+  NoThanks: 'rechazo cortés pero tajante en el chat',
+  widepeepoHappy: 'alegría desbordante y tierna de todo el chat',
+  Jamgie: 'cabeceo relajado para acompañar cualquier canción',
+  BLEHHHH: 'gesto travieso y burlón del chat',
+  dinkDonk: 'llamado insistente para captar atención en el chat',
+  GIGAWOMAN: 'admiración absoluta hacia una actitud imponente femenina',
+  MateTime: 'pausa rioplatense para cebar durante el directo',
+  monkaW: 'tensión al máximo cuando algo se vuelve peligroso',
+  widepeepoSad: 'tristeza exagerada y desconsolada del chat',
+  PetTheCoco: 'cariño masivo para la mascota dorada del canal',
+  peepoNashe: 'aprobación clásica de la comunidad hispana',
+  ElNoSabe: 'risa cómplice cuando alguien ignora una sorpresa',
+  FeelsBadMan: 'lamento clásico del chat ante la mala suerte',
+  PagMan: 'celebración eufórica ante un logro enorme',
+  popCat: 'ritmo veloz o sorpresa divertida en el chat',
+  monkaOMEGA: 'pánico absoluto cuando la situación se desborda',
+  Clueless: 'ingenuidad total antes de que ocurra el desastre',
+  COPIUM: 'autoengaño cómico del chat para no perder la fe',
+  GoodMorning: 'saludo matutino al empezar temprano el directo',
+  GoodNight: 'despedida cariñosa al cierre nocturno del stream',
+  Offline: 'cuando la transmisión termina y apagan cámara',
+  Weirdge: 'incomodidad cuando alguien suelta algo raro',
+  catKISS: 'gesto cariñoso del chat mandando afecto',
+  FeelsCringeMan: 'vergüenza ajena colectiva ante una escena incómoda',
+  BauloVibe: 'baile propio del streamer cuando suena buena música',
+  BauloSit: 'espera relajada en versión tierna del canal',
+  baulodance: 'festejo bailable al aire libre propio del canal',
+  bauloCrashOut: 'cuando el streamer pierde la paciencia por completo',
+  bauloTilt: 'frustración notoria del streamer en plena partida',
+  bauloWar: 'mirada perdida del streamer tras un momento duro',
+  GIGABAULO: 'versión triunfal e imponente del dueño del canal',
+  GOBAULOGO: 'grito de aliento colectivo para impulsar al streamer',
+  bautiquit: 'broma de cerrar el stream cuando dice algo polémico',
+  bautrollface: 'carcajada traviesa propia del dueño del canal',
+  bauloywalter: 'dupla querida del streamer junto a su gato',
+  bDANCE: 'festejo bailable en habitación con luces del canal',
+  voidbarto: 'versión sombría del meme amarillo ante algo turbio',
+  bartoB: 'fusión humorística del meme amarillo con el streamer',
+  COOKING: 'cuando alguien prepara una jugada o idea magistral',
+  BANGER: 'reacción unánime cuando suena una canción épica',
+  Voidge: 'ambiente sombrío ante una anécdota perturbadora',
+  Cooked: 'resignación total cuando alguien ya está acabado',
+  ragebait: 'señalar una provocación hecha solo para hacer enojar',
+  JARVIS: 'pedir ayuda exagerada en broma como un superhéroe',
+  BELLINGHAM: 'festejo triunfal abriendo brazos en la cancha',
+  ANDAPAYABOBO: 'frase mundialista para mandar lejos a alguien molesto',
+  TENGOUNPLAN: 'cuando el chat o streamer trama una estrategia',
+  davoDance: 'baile festivo de un creador futbolero amigo',
+  cobrixDance: 'festejo bailable sentado de un streamer argentino',
+  cobraCrashOut: 'estallido de bronca desde el sofá ante una derrota',
+  davojam: 'ritmo musical alegre de un creador futbolero',
+  momoClap: 'aplauso solemne e irónico con traje de gala',
+  xdding: 'risa maliciosa y pícara de roedor en el chat',
+  emociona: 'conmoción total hasta las lágrimas por algo épico',
+  FINALLY: 'alivio eufórico cuando por fin ocurre lo esperado',
+  BRAINROT: 'humor absurdo y saturado de memes virales',
+  AINTNOWAY: 'incredulidad absoluta ante algo imposible de creer',
+  CAUGHT: 'cuando atrapan a alguien en plena mentira o falta',
+  YAPPING: 'burla cuando alguien habla sin parar demasiado rato',
+  Postura: 'recordatorio del chat para enderezar la espalda',
+  ionovoyadecirlo: 'sonrisa pícara callando un comentario comprometedor',
+  iotelodije: 'triunfo del chat cuando acierta una predicción',
+  iatelodije: 'orgullo del streamer tras demostrar que tenía razón',
+  nomelocreo: 'asombro increíble de tribuna ante lo impensado',
+  muelto: 'agotamiento completo tras perder o quedarse sin fuerzas',
+  sentao: 'espera paciente y tranquila viendo el directo',
+  amimir: 'despedida tierna cuando toca irse a descansar',
+  Saltito: 'entusiasmo inocente brincando de alegría en el chat',
+  AMARILLA: 'primera advertencia arbitral en broma en el chat',
+  LIBERTAD: 'alivio glorioso cuando termina una espera o castigo',
+  Washed: 'broma cuando alguien perdió su antiguo gran nivel',
+  Chilling: 'relajación absoluta disfrutando tranquilo el directo',
+  DeadChat: 'burla cuando nadie escribe nada durante un silencio',
+  TICTAC: 'aviso tenso de que corre el tiempo hacia algo grande',
+  NOESTOYACABADO: 'demostrar vigencia tras una gran jugada de regreso',
+  MEQUEDODORMIDO: 'broma exagerada cuando un juego o charla aburre',
+  WhoAsked: 'respuesta irónica cuando nadie pidió esa opinión',
+  PLEASE: 'súplica desesperada del chat para que algo ocurra',
+};
 
 function stripAccents(str) {
   return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
 function normAnswer(str) {
-  // Keep Ñ as Ñ, uppercase everything else, strip accents if any
   return str
     .replace(/ñ/g, '__ENYE__')
     .replace(/Ñ/g, '__ENYE__')
@@ -51,8 +172,7 @@ function normAnswer(str) {
 }
 
 function capFirst(s) {
-  if (!s) return s;
-  return s[0].toUpperCase() + s.slice(1);
+  return s ? s[0].toUpperCase() + s.slice(1) : s;
 }
 
 function loadDefinitions() {
@@ -63,6 +183,11 @@ function loadDefinitions() {
     Object.assign(defs, JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
   }
   return defs;
+}
+
+function loadCuratedClues() {
+  const file = path.join(ROOT, 'data', 'curated-clues.json');
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
 function loadChatStats() {
@@ -80,45 +205,45 @@ function loadChatStats() {
   return counts;
 }
 
-// --- Clue generators ---
-// Every generator returns { tipo, pista, explicacion, dificultad } or null.
-// Markup conventions (matching criptico.es):
-//   _definicion_  (green)
-//   ~indicador~   (amber)
-//   *material*    (brick red)
+function hasDefLeak(name, defText) {
+  const nn = normAnswer(name);
+  const nd = normAnswer(defText);
+  if (nn.length >= 4) {
+    for (let i = 0; i <= nn.length - 4; i++) {
+      if (nd.includes(nn.slice(i, i + 4))) return true;
+    }
+  }
+  return false;
+}
 
-function makeCharade(emote, def, rand) {
-  const partes = def.partes;
+// --- Auto clue generators for medium-frequency longer emotes (>= 6 chars) ---
+
+function makeCharade(emote, defText, partes, rand) {
   if (!Array.isArray(partes) || partes.length < 2 || partes.length > 3) return null;
   if (partes.map(([c]) => c).join('') !== emote.name) return null;
 
-  // Avoid charades where a part clue repeats a major (6+ letter) word already in def
   const defWords = new Set(
-    stripAccents(def.def).toLowerCase().split(/[^a-z]+/).filter((w) => w.length >= 6 && w !== 'ranita' && w !== 'streamer')
+    stripAccents(defText).toLowerCase().split(/[^a-z]+/).filter((w) => w.length >= 6 && w !== 'ranita' && w !== 'streamer')
   );
   for (const [, clue] of partes) {
     const clueWords = stripAccents(clue).toLowerCase().split(/[^a-z]+/);
     if (clueWords.some((w) => defWords.has(w))) return null;
   }
 
-  const d = def.def;
   const clues = partes.map(([, clue]) => `*${clue}*`);
   const listStr = clues.length === 2
     ? `${clues[0]} y ${clues[1]}`
     : `${clues[0]}, ${clues[1]} y ${clues[2]}`;
 
   const templates = [
-    () => `_${capFirst(d)}_, ~al juntar~ ${listStr}`,
-    () => `~Uniendo~ ${listStr} ~se forma~ _${d}_`,
-    () => `_${capFirst(d)}_ ~sumando~ ${listStr}`,
-    () => `~Combinando~ ${listStr} ~aparece~ _${d}_`,
+    () => `_${capFirst(defText)}_, ~al juntar~ ${listStr}`,
+    () => `~Uniendo~ ${listStr} ~se forma~ _${defText}_`,
+    () => `_${capFirst(defText)}_ ~sumando~ ${listStr}`,
   ];
-
   const pista = pick(rand, templates)();
   const breakdown = partes.map(([c, cl]) => `«${c}» (${cl})`).join(' + ');
-  const explicacion = `Definición: «${d}». Charada: al unir ${breakdown} se obtiene ${emote.name}.`;
-  const dificultad = partes.length === 2 && emote.uses > 0 ? 'Fácil' : 'Medio';
-  return { tipo: 'charada', pista, explicacion, dificultad };
+  const explicacion = `Contexto de uso: «${defText}». Charada: al unir ${breakdown} se obtiene ${emote.name}.`;
+  return { tipo: 'charada', pista, explicacion, dificultad: partes.length === 2 ? 'Fácil' : 'Medio' };
 }
 
 function scrambleAnswer(ans, rand) {
@@ -127,217 +252,98 @@ function scrambleAnswer(ans, rand) {
   const rev = [...chars].reverse().join('');
   let best = null;
   let bestDiff = -1;
-
   for (let attempt = 0; attempt < 40; attempt++) {
     const sh = shuffle(rand, chars).join('');
     if (sh === ans || sh === rev) continue;
     let diff = 0;
-    for (let i = 0; i < chars.length; i++) {
-      if (sh[i] !== chars[i]) diff++;
-    }
-    if (diff > bestDiff) {
-      bestDiff = diff;
-      best = sh;
-    }
+    for (let i = 0; i < chars.length; i++) if (sh[i] !== chars[i]) diff++;
+    if (diff > bestDiff) { bestDiff = diff; best = sh; }
     if (diff >= Math.ceil(chars.length * 0.7)) break;
   }
   return best;
 }
 
-function makeAnagram(emote, def, rand) {
+function makeAnagram(emote, defText, rand) {
   const ans = normAnswer(emote.name);
-  if (ans.length < 4 || ans.length > 11) return null;
+  if (ans.length < 6 || ans.length > 11) return null;
   const scrambled = scrambleAnswer(ans, rand);
   if (!scrambled) return null;
-
-  const d = def.def;
   const fodder = `«${scrambled.toLowerCase()}»`;
   const templates = [
-    () => `_${capFirst(d)}_, ~revolviendo~ *${fodder}*`,
-    () => `~Desordenando~ *${fodder}* ~surge~ _${d}_`,
-    () => `_${capFirst(d)}_ ~con las letras revueltas de~ *${fodder}*`,
-    () => `~Mezclando~ *${fodder}* ~resulta~ _${d}_`,
-    () => `_${capFirst(d)}_, ~anagrama de~ *${fodder}*`,
+    () => `_${capFirst(defText)}_, ~revolviendo~ *${fodder}*`,
+    () => `~Desordenando~ *${fodder}* ~surge~ _${defText}_`,
+    () => `_${capFirst(defText)}_, ~anagrama de~ *${fodder}*`,
   ];
-
-  const pista = pick(rand, templates)();
-  const explicacion = `Definición: «${d}». Anagrama: reordenando las letras de «${scrambled.toLowerCase()}» se obtiene ${emote.name}.`;
-  const dificultad = ans.length <= 6 ? 'Fácil' : ans.length <= 9 ? 'Medio' : 'Difícil';
-  return { tipo: 'anagrama', pista, explicacion, dificultad };
+  return {
+    tipo: 'anagrama',
+    pista: pick(rand, templates)(),
+    explicacion: `Contexto de uso: «${defText}». Anagrama: reordenando las letras de «${scrambled.toLowerCase()}» sale ${emote.name}.`,
+    dificultad: ans.length <= 8 ? 'Fácil' : 'Medio',
+  };
 }
 
-function makeReversal(emote, def, rand) {
+function makeReversal(emote, defText, rand) {
   const ans = normAnswer(emote.name);
-  if (ans.length < 3 || ans.length > 10) return null;
+  if (ans.length < 6 || ans.length > 10) return null;
   const rev = [...ans].reverse().join('');
-  if (rev === ans) return null; // palindrome
-
-  const d = def.def;
+  if (rev === ans) return null;
   const fodder = `«${rev.toLowerCase()}»`;
   const templates = [
-    () => `_${capFirst(d)}_, ~leído al revés en~ *${fodder}*`,
-    () => `~Invirtiendo~ *${fodder}* ~aparece~ _${d}_`,
-    () => `_${capFirst(d)}_ ~dando la vuelta a~ *${fodder}*`,
-    () => `~Al derecho desde atrás~, *${fodder}* ~es~ _${d}_`,
+    () => `_${capFirst(defText)}_, ~leído al revés en~ *${fodder}*`,
+    () => `~Invirtiendo~ *${fodder}* ~aparece~ _${defText}_`,
   ];
-
-  const pista = pick(rand, templates)();
-  const explicacion = `Definición: «${d}». Inversión: leyendo «${rev.toLowerCase()}» de derecha a izquierda sale ${emote.name}.`;
-  const dificultad = ans.length <= 7 ? 'Fácil' : 'Medio';
-  return { tipo: 'inversion', pista, explicacion, dificultad };
+  return {
+    tipo: 'inversion',
+    pista: pick(rand, templates)(),
+    explicacion: `Contexto de uso: «${defText}». Inversión: leyendo «${rev.toLowerCase()}» de derecha a izquierda se obtiene ${emote.name}.`,
+    dificultad: ans.length <= 7 ? 'Fácil' : 'Medio',
+  };
 }
 
-function makeHidden(emote, def, rand) {
+function makeHidden(emote, defText, rand) {
   const ans = normAnswer(emote.name).toLowerCase();
-  if (ans.length < 3 || ans.length > 10) return null;
-
-  // Build 2 or 3 word-like chunks with filler prefix & suffix and an internal split
+  if (ans.length < 6 || ans.length > 10) return null;
   const pre = pick(rand, FILLER).slice(0, 2 + Math.floor(rand() * 2));
   const suf = pick(rand, FILLER).slice(0, 2 + Math.floor(rand() * 2));
-
-  let seq;
-  if (ans.length >= 6) {
-    const cut1 = 2 + Math.floor(rand() * Math.max(1, Math.floor(ans.length / 2) - 1));
-    const cut2 = cut1 + 2 + Math.floor(rand() * Math.max(1, ans.length - cut1 - 3));
-    if (cut2 < ans.length - 1) {
-      seq = `${pre}${ans.slice(0, cut1)} ${ans.slice(cut1, cut2)} ${ans.slice(cut2)}${suf}`;
-    } else {
-      seq = `${pre}${ans.slice(0, cut1)} ${ans.slice(cut1)}${suf}`;
-    }
-  } else if (ans.length >= 4) {
-    const cut = 1 + Math.floor(rand() * (ans.length - 2));
-    seq = `${pre}${ans.slice(0, cut)} ${ans.slice(cut)}${suf}`;
-  } else {
-    seq = `${pre}${ans}${suf}`;
-  }
-
-  // Ensure the exact answer never appears as a standalone token
+  const cut1 = 2 + Math.floor(rand() * Math.max(1, Math.floor(ans.length / 2) - 1));
+  const cut2 = cut1 + 2 + Math.floor(rand() * Math.max(1, ans.length - cut1 - 3));
+  const seq = cut2 < ans.length - 1
+    ? `${pre}${ans.slice(0, cut1)} ${ans.slice(cut1, cut2)} ${ans.slice(cut2)}${suf}`
+    : `${pre}${ans.slice(0, cut1)} ${ans.slice(cut1)}${suf}`;
   if (seq.split(' ').some((w) => w === ans)) return null;
-
-  const d = def.def;
   const fodder = `«${seq}»`;
-  const templates = [
-    () => `_${capFirst(d)}_, ~oculto dentro de~ *${fodder}*`,
-    () => `~Escondido en~ *${fodder}* ~asoma~ _${d}_`,
-    () => `_${capFirst(d)}_ ~encubierto en~ *${fodder}*`,
-    () => `~Dentro de~ *${fodder}* ~se esconde~ _${d}_`,
-  ];
-
-  const pista = pick(rand, templates)();
-  const explicacion = `Definición: «${d}». Palabra oculta: leyendo las letras seguidas dentro de «${seq}» aparece ${emote.name}.`;
-  const dificultad = ans.length <= 6 ? 'Fácil' : 'Medio';
-  return { tipo: 'oculta', pista, explicacion, dificultad };
+  return {
+    tipo: 'oculta',
+    pista: `_${capFirst(defText)}_, ~oculto dentro de~ *${fodder}*`,
+    explicacion: `Contexto de uso: «${defText}». Palabra oculta: leyendo seguido dentro de «${seq}» aparece ${emote.name}.`,
+    dificultad: 'Medio',
+  };
 }
 
-function makeAcrostic(emote, def, rand) {
+function makeAcrostic(emote, defText, rand) {
   const ans = normAnswer(emote.name).toLowerCase();
-  if (ans.length < 2 || ans.length > 9) return null;
-
+  if (ans.length < 6 || ans.length > 9) return null;
   const used = new Set();
   const words = [];
   for (const ch of ans) {
     const pool = WORDS_BY_LETTER[ch];
-    if (!pool || pool.length === 0) return null;
-    const candidates = pool.filter((w) => !used.has(w) && stripAccents(w).toLowerCase() !== ans);
-    const chosen = pick(rand, candidates.length ? candidates : pool);
+    if (!pool || !pool.length) return null;
+    const cands = pool.filter((w) => !used.has(w) && stripAccents(w).toLowerCase() !== ans);
+    const chosen = pick(rand, cands.length ? cands : pool);
     used.add(chosen);
     words.push(chosen);
   }
-
-  const d = def.def;
   const fodder = `«${words.join(', ')}»`;
-  const templates = [
-    () => `_${capFirst(d)}_ ~en las iniciales de~ *${fodder}*`,
-    () => `~Tomando la primera letra de~ *${fodder}* ~sale~ _${d}_`,
-    () => `_${capFirst(d)}_, ~principios de~ *${fodder}*`,
-    () => `~Al iniciar cada palabra de~ *${fodder}* ~se lee~ _${d}_`,
-  ];
-
-  const pista = pick(rand, templates)();
-  const initials = words.map((w) => `${w[0].toUpperCase()}${w.slice(1)}`).join(', ');
-  const explicacion = `Definición: «${d}». Iniciales: tomando la primera letra de «${initials}» se forma ${emote.name}.`;
-  const dificultad = ans.length <= 5 ? 'Fácil' : 'Medio';
-  return { tipo: 'iniciales', pista, explicacion, dificultad };
+  return {
+    tipo: 'iniciales',
+    pista: `_${capFirst(defText)}_ ~en las iniciales de~ *${fodder}*`,
+    explicacion: `Contexto de uso: «${defText}». Iniciales de «${words.join(', ')}» forman ${emote.name}.`,
+    dificultad: 'Medio',
+  };
 }
 
-function makeNumericClue(emote, def, rand) {
-  const n = Number(emote.name);
-  const s = emote.name;
-  const d = def.def;
-  const options = [];
-
-  // 1. Reversed digits (when digits differ and reversed has no leading zero)
-  const revStr = [...s].reverse().join('');
-  if (revStr !== s && !revStr.startsWith('0')) {
-    const revWord = numberToWords(Number(revStr));
-    options.push({
-      tipo: 'inversion',
-      pista: `_${capFirst(d)}_, ~al invertir~ *${revWord}*`,
-      explicacion: `Definición: «${d}». Inversión numérica: al dar la vuelta a ${revStr} (${revWord}) se obtiene ${s}.`,
-      dificultad: 'Fácil',
-    });
-  }
-
-  // 2. Repeated identical digit (e.g. 11, 44, 55, 77, 99)
-  if (s.length === 2 && s[0] === s[1]) {
-    const digitWord = numberToWords(Number(s[0]));
-    options.push({
-      tipo: 'repeticion',
-      pista: `_${capFirst(d)}_: ~dos veces la cifra~ *${digitWord}*`,
-      explicacion: `Definición: «${d}». Repetición: escribiendo dos veces la cifra ${s[0]} (${digitWord}) se forma ${s}.`,
-      dificultad: 'Fácil',
-    });
-  }
-
-  // 3. Clean multiplication (both factors >= 3 and <= 20)
-  const factorPairs = [];
-  for (let a = 3; a <= Math.floor(Math.sqrt(n)); a++) {
-    if (n % a === 0 && n / a <= 25) factorPairs.push([a, n / a]);
-  }
-  if (factorPairs.length) {
-    const [a, b] = pick(rand, factorPairs);
-    const aw = numberToWords(a);
-    const bw = numberToWords(b);
-    options.push({
-      tipo: 'operacion',
-      pista: `_${capFirst(d)}_, ~multiplicando~ *${aw}* ~por~ *${bw}*`,
-      explicacion: `Definición: «${d}». Operación: ${a} × ${b} = ${s}.`,
-      dificultad: 'Medio',
-    });
-  }
-
-  // 4. Clean addition
-  const a = 7 + Math.floor(rand() * Math.max(1, n - 14));
-  const b = n - a;
-  if (a > 0 && b > 0 && a !== n && b !== n) {
-    options.push({
-      tipo: 'operacion',
-      pista: `_${capFirst(d)}_, ~sumando~ *${numberToWords(a)} y ${numberToWords(b)}*`,
-      explicacion: `Definición: «${d}». Operación: ${a} + ${b} = ${s}.`,
-      dificultad: 'Medio',
-    });
-  }
-
-  // 5. Clean subtraction from round number
-  const ceilTen = Math.ceil((n + 5) / 10) * 10;
-  const diff = ceilTen - n;
-  if (diff >= 1 && diff <= 25) {
-    options.push({
-      tipo: 'operacion',
-      pista: `_${capFirst(d)}_, ~si restas~ *${numberToWords(diff)} a ${numberToWords(ceilTen)}*`,
-      explicacion: `Definición: «${d}». Operación: ${ceilTen} − ${diff} = ${s}.`,
-      dificultad: 'Medio',
-    });
-  }
-
-  return pick(rand, options);
-}
-
-function makeLongFallback(emote, def, rand) {
-  // For alphabetic emotes of length 11..16 without charade parts:
-  // combine two clean chunks (split reversal + literal or chunked hidden/acrostic).
+function makeLongFallback(emote, defText, rand) {
   const ans = normAnswer(emote.name).toLowerCase();
-  const d = def.def;
   const mid = Math.floor(ans.length / 2);
   const left = ans.slice(0, mid);
   const right = ans.slice(mid);
@@ -346,72 +352,39 @@ function makeLongFallback(emote, def, rand) {
   if (revLeft !== left && revRight !== right) {
     return {
       tipo: 'inversion',
-      pista: `_${capFirst(d)}_, ~invirtiendo cada parte de~ *«${revLeft} ${revRight}»*`,
-      explicacion: `Definición: «${d}». Inversión por partes: «${revLeft}» → «${left}» y «${revRight}» → «${right}», formando ${emote.name}.`,
-      dificultad: 'Difícil',
+      pista: `_${capFirst(defText)}_, ~invirtiendo cada bloque de~ *«${revLeft} ${revRight}»*`,
+      explicacion: `Contexto de uso: «${defText}». Invirtiendo «${revLeft}» → «${left}» y «${revRight}» → «${right}» se forma ${emote.name}.`,
+      dificultad: 'Medio',
     };
   }
   const scrambled = scrambleAnswer(normAnswer(emote.name), rand);
-  if (scrambled) {
-    return {
-      tipo: 'anagrama',
-      pista: `_${capFirst(d)}_, ~reordenando~ *«${scrambled.toLowerCase()}»*`,
-      explicacion: `Definición: «${d}». Anagrama: reordenando «${scrambled.toLowerCase()}» se obtiene ${emote.name}.`,
-      dificultad: 'Difícil',
-    };
-  }
-  // Pure repeated letters (e.g. AAAA, EAAAAAAAAA)
-  const firstCh = ans[0].toUpperCase();
   return {
-    tipo: 'repeticion',
-    pista: `_${capFirst(d)}_: ~${numberToWords(ans.length)} letras~ *empezando por ${firstCh}*`,
-    explicacion: `Definición: «${d}». Se forma con ${emote.name}.`,
+    tipo: 'anagrama',
+    pista: `_${capFirst(defText)}_, ~reordenando~ *«${scrambled.toLowerCase()}»*`,
+    explicacion: `Contexto de uso: «${defText}». Anagrama de «${scrambled.toLowerCase()}» → ${emote.name}.`,
     dificultad: 'Medio',
   };
 }
 
-function generateClue(emote, def) {
-  const rand = rngFor(`clue-v1:${emote.name}`);
+function generateAccessibleClue(emote, def) {
+  const rand = rngFor(`clue-v2:${emote.name}`);
+  // Prefer chat-usage context definition if available and leak-free
+  const customCtx = USAGE_CONTEXT_DEFS[emote.name];
+  const defText = customCtx && !hasDefLeak(emote.name, customCtx) ? customCtx : def.def;
 
-  if (emote.numeric) {
-    return makeNumericClue(emote, def, rand);
-  }
-
-  const ans = normAnswer(emote.name);
-
-  // Special case: repeated identical character (e.g., AAAA)
-  if (new Set([...ans]).size === 1) {
-    const ch = ans[0];
-    return {
-      tipo: 'repeticion',
-      pista: `_${capFirst(def.def)}_: ~repetición de la letra~ *«${ch}»*`,
-      explicacion: `Definición: «${def.def}». Repetición: la letra ${ch} escrita ${ans.length} veces da ${emote.name}.`,
-      dificultad: 'Fácil',
-    };
-  }
-
-  // Gather all valid candidates and pick with balanced weights so the daily feed feels rich & varied!
   const candidates = [];
-
-  const charade = makeCharade(emote, def, rngFor(`char:${emote.name}`));
-  if (charade) candidates.push([charade, 42]);
-
-  const anagram = makeAnagram(emote, def, rngFor(`anag:${emote.name}`));
-  if (anagram) candidates.push([anagram, 24]);
-
-  const hidden = makeHidden(emote, def, rngFor(`hid:${emote.name}`));
+  const charade = makeCharade(emote, defText, def.partes, rngFor(`char2:${emote.name}`));
+  if (charade) candidates.push([charade, 48]);
+  const anagram = makeAnagram(emote, defText, rngFor(`anag2:${emote.name}`));
+  if (anagram) candidates.push([anagram, 20]);
+  const hidden = makeHidden(emote, defText, rngFor(`hid2:${emote.name}`));
   if (hidden) candidates.push([hidden, 16]);
+  const reversal = makeReversal(emote, defText, rngFor(`rev2:${emote.name}`));
+  if (reversal) candidates.push([reversal, 16]);
+  const acrostic = makeAcrostic(emote, defText, rngFor(`acr2:${emote.name}`));
+  if (acrostic) candidates.push([acrostic, 10]);
 
-  const reversal = makeReversal(emote, def, rngFor(`rev:${emote.name}`));
-  if (reversal) candidates.push([reversal, 14]);
-
-  const acrostic = makeAcrostic(emote, def, rngFor(`acr:${emote.name}`));
-  if (acrostic) candidates.push([acrostic, ans.length <= 4 ? 32 : 12]);
-
-  if (candidates.length === 0) {
-    return makeLongFallback(emote, def, rand);
-  }
-
+  if (!candidates.length) return makeLongFallback(emote, defText, rand);
   const totalW = candidates.reduce((s, [, w]) => s + w, 0);
   let r = rand() * totalW;
   for (const [clue, w] of candidates) {
@@ -420,138 +393,125 @@ function generateClue(emote, def) {
   return candidates[0][0];
 }
 
-function classifyEmote(raw, uses) {
-  const nameLow = raw.name.toLowerCase();
-  const numeric = /^[0-9]+$/.test(raw.name);
+function interleaveSchedule(items) {
+  // Interleave Top most-used (>5% max), numeric logic challenges, active SE, and Kick staples
+  // so every single week has a balanced mix of hard staples, logic math riddles, and accessible favorites!
+  const top = shuffle(rngFor('sched-top-v2'), items.filter((x) => x.muyUsado));
+  const nums = shuffle(rngFor('sched-num-v2'), items.filter((x) => x.numerico));
+  const rest = shuffle(rngFor('sched-rest-v2'), items.filter((x) => !x.muyUsado && !x.numerico));
 
-  if (uses >= 5000) {
-    return { tier: 1, categoria: 'Más usado en el chat' };
-  }
-  if (uses > 0) {
-    return { tier: 1, categoria: 'Popular en el chat' };
-  }
-  if (numeric) {
-    return { tier: 2, categoria: 'Emote numérico de baulo' };
-  }
-  if (CHANNEL_KEYWORDS.some((kw) => nameLow.includes(kw))) {
-    return { tier: 2, categoria: 'Clásico del canal' };
-  }
-  // Very recently added Kick-era emotes (top ~120 most recent timestamps)
-  if (raw.timestamp && raw.timestamp >= 1755000000000) {
-    return { tier: 2, categoria: 'Reciente en Kick' };
-  }
-  return { tier: 3, categoria: 'Catálogo 7TV de baulo' };
-}
-
-function interleaveByTier(items) {
-  // Sort Tier 1 mostly by real popularity with deterministic local shuffle in bands
-  // so top emotes appear throughout the year instead of only in week 1.
-  const t1 = items.filter((x) => x.tier === 1).sort((a, b) => b.uses - a.uses);
-  const t2 = shuffle(rngFor('tier2-order-v1'), items.filter((x) => x.tier === 2));
-  const t3 = shuffle(rngFor('tier3-order-v1'), items.filter((x) => x.tier === 3));
-
-  // Lightly shuffle Tier 1 within bands of 12 so the hottest emotes stay prominent
-  // without making consecutive days all identical styles, while keeping variety!
-  const t1Mixed = [];
-  for (let i = 0; i < t1.length; i += 12) {
-    t1Mixed.push(...shuffle(rngFor(`t1-band-${i}`), t1.slice(i, i + 12)));
-  }
-
-  // Spread all 15 numeric emotes evenly across the first ~180 Tier 2 slots so every month has one
-  const t2Nums = t2.filter((x) => x.numeric);
-  const t2Words = t2.filter((x) => !x.numeric);
-  const t2Blended = [];
-  const numGap = Math.max(4, Math.floor(Math.min(t2Words.length, 165) / Math.max(1, t2Nums.length)));
-  let ni = 0;
-  for (let i = 0; i < t2Words.length; i++) {
-    t2Blended.push(t2Words[i]);
-    if ((i + 1) % numGap === 0 && ni < t2Nums.length) {
-      t2Blended.push(t2Nums[ni++]);
-    }
-  }
-  while (ni < t2Nums.length) t2Blended.push(t2Nums[ni++]);
-
-  // Weekly cadence: 2 Tier 1 + 3 Tier 2 + 2 Tier 3 per 7 days
-  // -> 130 Tier 1 emotes span ~455 days (well over a full year!)
+  // Blend numeric emotes roughly every ~14 days across the entire ~220-day cycle
   const result = [];
-  let i1 = 0, i2 = 0, i3 = 0;
-  const pattern = [1, 2, 2, 3, 1, 2, 3];
+  let it = 0, inum = 0, ir = 0;
+  // Pattern over 14 days: 3 top-used (hard), 1 numeric logic riddle, 10 active SE/Kick staples
+  const pattern = ['R', 'T', 'R', 'R', 'T', 'R', 'N', 'R', 'R', 'T', 'R', 'R', 'R', 'R'];
   let step = 0;
 
-  while (i1 < t1Mixed.length || i2 < t2Blended.length || i3 < t3.length) {
-    const want = pattern[step % pattern.length];
+  while (it < top.length || inum < nums.length || ir < rest.length) {
+    const slot = pattern[step % pattern.length];
     step++;
-    if (want === 1 && i1 < t1Mixed.length) result.push(t1Mixed[i1++]);
-    else if (want === 2 && i2 < t2Blended.length) result.push(t2Blended[i2++]);
-    else if (want === 3 && i3 < t3.length) result.push(t3[i3++]);
-    else if (i1 < t1Mixed.length) result.push(t1Mixed[i1++]);
-    else if (i2 < t2Blended.length) result.push(t2Blended[i2++]);
-    else if (i3 < t3.length) result.push(t3[i3++]);
+    if (slot === 'T' && it < top.length) result.push(top[it++]);
+    else if (slot === 'N' && inum < nums.length) result.push(nums[inum++]);
+    else if (slot === 'R' && ir < rest.length) result.push(rest[ir++]);
+    else if (it < top.length) result.push(top[it++]);
+    else if (inum < nums.length) result.push(nums[inum++]);
+    else if (ir < rest.length) result.push(rest[ir++]);
   }
-
   return result;
 }
 
 function main() {
   const emoteSet = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'emote-set.json'), 'utf8'));
   const defs = loadDefinitions();
+  const curated = loadCuratedClues();
   const chatStats = loadChatStats();
+
+  // Compute max uses among valid non-flagged emotes to calculate exact relative usage %
+  let maxUses = 1;
+  for (const raw of emoteSet.emotes) {
+    const def = defs[raw.name];
+    if (!def || def.flag !== 'ok') continue;
+    const u = chatStats.get(raw.name.toLowerCase()) || 0;
+    if (u > maxUses) maxUses = u;
+  }
 
   const seenLower = new Set();
   const playable = [];
-  const skipped = { invalid: 0, flagged: 0, length: 0, missingDef: 0, duplicate: 0 };
+  const skipped = { invalid: 0, flagged: 0, length: 0, lowUsage: 0, duplicate: 0 };
 
   for (const raw of emoteSet.emotes) {
     const name = raw.name;
-    if (!VALID_NAME_RE.test(name)) {
-      skipped.invalid++;
-      continue;
-    }
+    if (!VALID_NAME_RE.test(name)) { skipped.invalid++; continue; }
     const low = name.toLowerCase();
-    if (seenLower.has(low)) {
-      skipped.duplicate++;
-      continue;
-    }
+    if (seenLower.has(low)) { skipped.duplicate++; continue; }
     seenLower.add(low);
 
     const def = defs[name];
-    if (!def) {
-      skipped.missingDef++;
-      continue;
-    }
-    if (def.flag !== 'ok') {
-      skipped.flagged++;
-      continue;
-    }
-    if (name.length < MIN_PLAYABLE_LEN || name.length > MAX_PLAYABLE_LEN) {
-      skipped.length++;
-      continue;
-    }
+    if (!def || def.flag !== 'ok') { skipped.flagged++; continue; }
+    if (name.length < 2 || name.length > MAX_PLAYABLE_LEN) { skipped.length++; continue; }
+    if (EXCLUDED_OBSCURE.has(name)) { skipped.lowUsage++; continue; }
 
     const uses = chatStats.get(low) || 0;
+    const relPct = Math.round((uses / maxUses) * 1000) / 10; // e.g., 51.0% relative to #1
     const numeric = /^[0-9]+$/.test(name);
-    const { tier, categoria } = classifyEmote(raw, uses);
+    const isTopUsed = relPct > 5.0; // Strictly > 5% relative usage!
+    const isActiveSE = uses >= MIN_SE_USES;
+    const isKickStaple = KICK_ACTIVE_STAPLES.has(name);
 
+    // Strictly exclude low-usage / barely-used emotes!
+    if (!isTopUsed && !isActiveSE && !numeric && !isKickStaple) {
+      skipped.lowUsage++;
+      continue;
+    }
+
+    const answer = normAnswer(name);
+    const isShort = !numeric && answer.length <= 5;
     const emoteMeta = {
       id: raw.id,
       name,
-      answer: normAnswer(name),
+      answer,
       numeric,
       animated: Boolean(raw.data?.animated),
       uses,
-      tier,
-      categoria,
+      relPct,
     };
 
-    const clue = generateClue(emoteMeta, def);
+    let clue;
+    let curada = false;
+    if (curated[name]) {
+      clue = curated[name];
+      curada = true;
+    } else {
+      clue = generateAccessibleClue(emoteMeta, def);
+    }
+
+    let tier = 2;
+    let categoria = 'Activo en Kick';
+    if (isTopUsed) {
+      tier = 1;
+      categoria = 'Muy usado · Reto difícil';
+    } else if (numeric) {
+      tier = 2;
+      categoria = 'Reto lógico · Emote numérico';
+    } else if (isShort) {
+      tier = 2;
+      categoria = isActiveSE ? 'Nombre corto · Reto difícil' : 'Kick corto · Reto difícil';
+    } else if (isActiveSE) {
+      tier = 2;
+      categoria = 'Habitual en el chat';
+    }
+
     playable.push({
       id: raw.id,
       nombre: name,
-      respuesta: emoteMeta.answer,
-      longitud: emoteMeta.answer.length,
+      respuesta: answer,
+      longitud: answer.length,
       numerico: numeric,
       animado: emoteMeta.animated,
-      pista: `${clue.pista} (${emoteMeta.answer.length})`,
+      muyUsado: isTopUsed,
+      corto: isShort,
+      curada,
+      pista: `${clue.pista} (${answer.length})`,
       tipo: clue.tipo,
       dificultad: clue.dificultad,
       explicacion: clue.explicacion,
@@ -559,13 +519,14 @@ function main() {
       tier,
       categoria,
       usos: uses,
+      usoRelPct: relPct,
     });
   }
 
-  const ordered = interleaveByTier(playable);
+  const ordered = interleaveSchedule(playable);
 
   const output = {
-    version: 1,
+    version: 2,
     epoch: '2026-01-01',
     canal: {
       nombre: 'baulo',
@@ -584,19 +545,18 @@ function main() {
   const outPath = path.join(ROOT, 'public', 'puzzles.json');
   fs.writeFileSync(outPath, JSON.stringify(output));
 
-  // Print summary stats
-  const byType = {};
-  const byTier = {};
-  const byDiff = {};
+  const byType = {}, byDiff = {};
+  let curatedCount = 0, topCount = 0, numCount = 0;
   for (const p of ordered) {
     byType[p.tipo] = (byType[p.tipo] || 0) + 1;
-    byTier[p.tier] = (byTier[p.tier] || 0) + 1;
     byDiff[p.dificultad] = (byDiff[p.dificultad] || 0) + 1;
+    if (p.curada) curatedCount++;
+    if (p.muyUsado) topCount++;
+    if (p.numerico) numCount++;
   }
-  console.log(`Built ${ordered.length} puzzles -> public/puzzles.json (${(fs.statSync(outPath).size / 1024).toFixed(1)} KB)`);
+  console.log(`Built ${ordered.length} active puzzles (${curatedCount} hand-crafted, ${topCount} top-used >5%, ${numCount} numeric) -> public/puzzles.json (${(fs.statSync(outPath).size / 1024).toFixed(1)} KB)`);
   console.log('Skipped:', skipped);
   console.log('By type:', byType);
-  console.log('By tier:', byTier);
   console.log('By difficulty:', byDiff);
 }
 

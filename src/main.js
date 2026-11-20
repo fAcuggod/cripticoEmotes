@@ -471,6 +471,8 @@ function renderStaticIcons() {
   setHtml('ico-nav-howto', ICONS.bookOpen);
   setHtml('ico-sf-book', ICONS.bookOpen);
   setHtml('ico-sf-7tv', ICONS.external);
+  setHtml('ico-footer-gh', ICONS.github);
+  setHtml('ico-footer-x', ICONS.x);
 
   document.querySelectorAll('.modal-close').forEach((btn) => {
     btn.innerHTML = ICONS.close;
@@ -550,7 +552,7 @@ function renderGame() {
   // Category tag
   let catBadge = '';
   if (puzzle.numerico) {
-    catBadge = `<span class="cr-tag-cat num">Numérico · ${puzzle.longitud} cifras</span>`;
+    catBadge = `<span class="cr-tag-cat num">Reto lógico · ${puzzle.longitud} cifras</span>`;
   } else if (puzzle.tier === 1) {
     catBadge = `<span class="cr-tag-cat tier1">★ ${escapeHtml(puzzle.categoria)}</span>`;
   } else {

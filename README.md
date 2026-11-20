@@ -1,16 +1,17 @@
 # Críptico Emotes — baulo (Kick / 7TV)
 
-Juego diario de acertijos crípticos inspirado en [criptico.es](https://criptico.es), adaptado exclusivamente al set de emotes **7TV** del canal de Kick de **baulo** ([ver set en 7TV](https://7tv.app/users/01FT80E0280001E12995B11F56)).
+Juego diario de acertijos crípticos inspirado en [criptico.es](https://criptico.es), adaptado exclusivamente a los emotes **7TV** más utilizados y activos del canal de Kick de **baulo** ([ver set en 7TV](https://7tv.app/users/01FT80E0280001E12995B11F56)).
 
 ## Características
 
-- **Acertijo diario sincronizado por fecha** con 5 intentos y calendario de días anteriores.
-- **886 emotes válidos de baulo** (nombres alfabéticos y emotes numéricos como `44`, `99`, `35`, `34`, `51`, excluyendo símbolos iniciales como `:0` y términos ofensivos/explícitos).
-- **Priorización por uso real en el chat** de baulo (combinando estadísticas históricas de StreamElements, emotes propios del canal/Kick y catálogo 7TV).
+- **Acertijo diario sincronizado por fecha** con 5 intentos y calendario/archivo de días anteriores.
+- **221 emotes activos y reconocibles de baulo** (se excluyen los ~665 emotes de uso muy bajo `<= 5%` / relleno poco frecuente, símbolos iniciales como `:0` y términos explícitos o discriminatorios).
+- **Dificultad graduada con contexto real de chat**:
+  - **Emotes más utilizados (> 5% relativo en chat)** y **emotes de nombre corto (≤ 5 letras)**: pistas crípticas artesanales más exigentes, basadas en su contexto real de uso en el chat y juegos de palabras genuinos ([`data/curated-clues.json`](data/curated-clues.json)).
+  - **15 emotes numéricos** (`11`, `32`, `34`, `35`, `44`, `45`, `51`, `52`, `55`, `69`, `77`, `83`, `90`, `95`, `99`): retos de lógica y razonamiento matemático de nivel secundario, con teclado numérico automático.
 - **Pistas interactivas**: Definición (verde), Indicador (ámbar), Material (rojo) y Revelar letra/cifra.
-- **Teclado adaptativo**: QWERTY para emotes alfabéticos y teclado numérico automático para emotes de cifras.
-- **Revelación del emote real de 7TV** (animado o estático) junto con su descripción y explicación al terminar la partida.
-- **Rachas, estadísticas y colección local** guardadas en `localStorage` (sin necesidad de cuentas).
+- **Revelación del emote real de 7TV** (animado o estático) junto con su descripción y explicación al terminar.
+- **Rachas, estadísticas y colección local** guardadas en `localStorage` (sin cuentas).
 
 ## Desarrollo local
 
@@ -23,9 +24,15 @@ npm run dev
 
 - `npm run dev` — Genera `public/puzzles.json` e inicia el servidor de desarrollo de Vite.
 - `npm run build` — Genera los acertijos y compila el sitio estático en `dist/`.
-- `npm run check` — Valida automáticamente que todos los acertijos tengan formato válido, sin filtraciones en la definición y con juegos de palabras matemáticamente verificables.
+- `npm run check` — Valida automáticamente los 221 acertijos (formato de marcas, cero filtraciones y verificación de reglas).
 - `npm run update-emotes` — Descarga el set actualizado de 7TV y estadísticas de chat de baulo en `data/`.
 
-## Despliegue en GitHub Pages
+## Despliegue
 
-El repositorio incluye el flujo [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) que compila y publica `dist/` automáticamente al hacer push en `main`.
+- **GitHub Pages**: flujo automático en [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+- **Vercel**: configuración lista en [`vercel.json`](vercel.json) (`vite`, `npm run build`, `dist/`). Puedes importarlo en un clic desde [vercel.com/new](https://vercel.com/new/clone?repository-url=https://github.com/fAcuggod/cripticoEmotes).
+
+## Enlaces
+
+- Repositorio: [github.com/fAcuggod/cripticoEmotes](https://github.com/fAcuggod/cripticoEmotes)
+- Autor en X: [@facugod0](https://x.com/facugod0)

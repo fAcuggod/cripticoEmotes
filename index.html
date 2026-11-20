@@ -148,17 +148,18 @@
         <h2 id="sobre-heading">Críptico Emotes: acertijos diarios del chat de baulo</h2>
         <p>
           Cada día aparece una nueva pista críptica cuya solución es siempre el nombre exacto de un
-          emote de <strong>7TV</strong> del canal de Kick de <strong>baulo</strong> (tanto nombres
-          alfabéticos como emotes numéricos tipo <code>44</code> o <code>99</code>, sin distinguir
-          mayúsculas ni minúsculas).
+          emote activo de <strong>7TV</strong> del canal de Kick de <strong>baulo</strong> (tanto
+          nombres alfabéticos como emotes numéricos tipo <code>44</code> o <code>99</code>, sin
+          distinguir mayúsculas ni minúsculas). Solo se incluyen emotes con uso real en la
+          comunidad: los de uso muy bajo quedan fuera.
         </p>
         <h3>Cómo se juega</h3>
         <p>
-          Toda pista tiene dos caminos hacia el mismo emote: una <strong>definición</strong> (qué
-          muestra o cómo se usa en el chat) y un <strong>juego de palabras</strong> con un indicador
-          (como «revolviendo», «al revés», «oculto en» o «al juntar») que señala qué hacer con el
-          material. El número entre paréntesis indica cuántas letras o cifras tiene la respuesta.
-          Tienes 5 intentos y pistas interactivas para resaltar cada parte o revelar caracteres.
+          Toda pista combina el <strong>contexto de uso</strong> del emote en el chat con un
+          <strong>juego de palabras</strong> (o un <strong>reto de lógica matemática</strong> para
+          los emotes numéricos). Los emotes más utilizados y los de nombres cortos presentan
+          desafíos más exigentes. Tienes 5 intentos y pistas interactivas para resaltar cada parte
+          o revelar caracteres.
         </p>
       </div>
     </section>
@@ -168,6 +169,28 @@
         <div class="footer-brand">
           <span class="footer-logo">Críptico Emotes</span>
           <span class="footer-badge">Kick · 7TV</span>
+          <div class="footer-social">
+            <a
+              href="https://github.com/fAcuggod/cripticoEmotes"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-pill"
+              title="Repositorio en GitHub"
+            >
+              <span class="footer-social-ico" id="ico-footer-gh" aria-hidden="true"></span>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://x.com/facugod0"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-pill"
+              title="Cuenta de X (@facugod0)"
+            >
+              <span class="footer-social-ico" id="ico-footer-x" aria-hidden="true"></span>
+              <span>@facugod0</span>
+            </a>
+          </div>
         </div>
         <div class="footer-links">
           <button type="button" class="footer-link-btn" id="footer-howto">Cómo se juega</button>
@@ -175,6 +198,10 @@
             7TV de baulo
           </a>
           <a href="https://kick.com/baulo" target="_blank" rel="noopener noreferrer">Kick de baulo</a>
+          <a href="https://github.com/fAcuggod/cripticoEmotes" target="_blank" rel="noopener noreferrer">
+            Repo GitHub
+          </a>
+          <a href="https://x.com/facugod0" target="_blank" rel="noopener noreferrer">X (@facugod0)</a>
           <a href="https://criptico.es" target="_blank" rel="noopener noreferrer">Inspirado en criptico.es</a>
         </div>
         <div class="footer-copy" id="footer-meta">
@@ -191,55 +218,60 @@
         <div class="howto-body">
           <p class="modal-text">
             Adivina el <strong>emote 7TV</strong> del día perteneciente al canal de Kick de
-            <strong>baulo</strong>. No importan las mayúsculas ni las minúsculas: por ejemplo,
-            <code>catJAM</code> y <code>CATJAM</code> cuentan igual. También participan emotes
-            compuestos solo por números (como <code>44</code> o <code>99</code>).
+            <strong>baulo</strong>. Solo aparecen emotes reconocidos y usados habitualmente en el
+            chat (se excluyen los de muy bajo uso). No importan las mayúsculas ni las minúsculas:
+            <code>catJAM</code> y <code>CATJAM</code> cuentan igual.
           </p>
 
           <div class="gc-anatomy">
             <div class="gc-example">
-              <span class="cr-parte" style="--c:#1E6B3C">Rana abatida con mirada baja</span>
-              <span class="cr-parte" style="--c:#B85C00">leída al revés en</span>
-              <span class="cr-parte" style="--c:#9B2D21">«egdas»</span> (5)
-              <div class="gc-example-ans">Solución: <strong>Sadge</strong></div>
+              <span class="cr-parte" style="--c:#1E6B3C">Ovación del chat tras una jugada brillante o un cierre épico</span>,
+              <span class="cr-parte" style="--c:#B85C00">escondida en</span>
+              <span class="cr-parte" style="--c:#9B2D21">«tecla para ganar»</span> (4)
+              <div class="gc-example-ans">Solución: <strong>CLAP</strong> (oculto en te<em>CLA P</em>ara)</div>
             </div>
             <div class="gc-anatomy-row">
               <span class="gc-tag def">Definición</span>
               <span class="gc-anatomy-text">
-                Describe qué se ve en el emote o cómo se usa en el chat.
+                Refleja cuándo y por qué usa el chat ese emote en directo.
               </span>
             </div>
             <div class="gc-anatomy-row">
               <span class="gc-tag ind">Indicador</span>
               <span class="gc-anatomy-text">
-                Avisa qué operación aplicar: anagrama («revolviendo»), inversión («al revés»),
-                oculto («dentro de»), iniciales, charada («al juntar») u operación numérica.
+                Señala la operación: anagrama, palabra oculta, inversión, charada, extremos o
+                razonamiento lógico-matemático.
               </span>
             </div>
             <div class="gc-anatomy-row">
               <span class="gc-tag mat">Material</span>
               <span class="gc-anatomy-text">
-                Las letras, palabras o cifras con las que se construye el nombre del emote.
+                Las palabras, símbolos o datos numéricos con los que se construye la respuesta.
               </span>
             </div>
           </div>
 
-          <h3 class="howto-sub">Reglas y pistas</h3>
+          <h3 class="howto-sub">Reglas y dificultad</h3>
           <ul class="howto-list">
             <li>Tienes <strong>5 intentos</strong> para acertar cada acertijo diario.</li>
             <li>
+              Los <strong>emotes más utilizados</strong> y los de <strong>nombres cortos</strong>
+              tienen pistas más elaboradas y crípticas.
+            </li>
+            <li>
+              Los <strong>emotes numéricos</strong> (como <code>44</code>, <code>55</code> o
+              <code>99</code>) proponen retos de <strong>lógica y razonamiento matemático</strong>
+              de nivel secundario.
+            </li>
+            <li>
               Puedes usar las pistas interactivas (<strong>Definición</strong>,
               <strong>Indicador</strong>, <strong>Material</strong> y
-              <strong>Revelar letra/cifra</strong>) siempre que quieras; cada pista usada
-              descuenta 10 puntos de la puntuación máxima de 100.
+              <strong>Revelar letra/cifra</strong>); cada pista usada descuenta 10 puntos de la
+              puntuación máxima de 100.
             </li>
             <li>
-              Al resolver el acertijo —o al agotar los intentos— se revela la imagen real del emote
-              en 7TV junto con su explicación completa.
-            </li>
-            <li>
-              Los emotes más usados en el chat de <strong>baulo</strong> y los clásicos del canal
-              tienen prioridad en el calendario diario.
+              Al resolver el acertijo —o agotar los intentos— se revela la imagen real del emote en
+              7TV junto con su explicación completa.
             </li>
           </ul>
         </div>

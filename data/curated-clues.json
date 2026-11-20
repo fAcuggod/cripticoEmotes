@@ -1,0 +1,698 @@
+{
+  "11": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Reacción atónita sacando la lengua en el chat_: ~el menor número primo de~ *dos cifras*",
+    "explicacion": "Definición por contexto: emote numérico de reacción atónita. Lógica matemática: el menor número primo de dos cifras es 11."
+  },
+  "32": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Festejo efusivo abriendo los brazos en camiseta blanca_: ~la quinta potencia de~ *dos*",
+    "explicacion": "Definición por contexto: emote numérico de celebración. Razonamiento matemático: 2 elevado a la quinta potencia (2⁵) es 32."
+  },
+  "34": {
+    "tipo": "logica",
+    "dificultad": "Difícil",
+    "pista": "_Reacción agitada gesticulando frente a la cámara_: ~el término de Fibonacci que sigue a~ *trece y veintiuno*",
+    "explicacion": "Definición por contexto: emote numérico agitado del chat. Sucesión de Fibonacci: cada término suma los dos anteriores, 13 + 21 = 34."
+  },
+  "35": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Mirada incrédula ladeando la cabeza_: ~producto de los dos primos impares consecutivos mayores que~ *tres*",
+    "explicacion": "Definición por contexto: emote numérico de incredulidad. Los dos números primos consecutivos mayores que 3 son 5 y 7; su producto es 5 × 7 = 35."
+  },
+  "44": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Gesto de rechazo con capucha roja_: ~único capicúa de dos dígitos cuyas cifras suman~ *ocho*",
+    "explicacion": "Definición por contexto: emote numérico de rechazo. Un capicúa de dos cifras tiene ambos dígitos iguales; si suman 8, cada cifra es 4 → 44."
+  },
+  "45": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Asombro llevándose las manos a la capucha roja_: ~los grados exactos de la mitad de~ *un ángulo recto*",
+    "explicacion": "Definición por contexto: emote numérico de sorpresa. Un ángulo recto mide 90°, y su mitad (la bisectriz) equivale a 45."
+  },
+  "51": {
+    "tipo": "logica",
+    "dificultad": "Difícil",
+    "pista": "_Boca abierta de asombro total en la silla gamer_: ~el triple del número primo que sigue a~ *trece*",
+    "explicacion": "Definición por contexto: emote numérico de shock. El siguiente número primo tras 13 es 17, y su triple es 3 × 17 = 51."
+  },
+  "52": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Expresión perpleja sin entender nada_: ~cantidad exacta de semanas completas que contiene~ *un año*",
+    "explicacion": "Definición por contexto: emote numérico de desconcierto. Un año de 365 días contiene exactamente 52 semanas completas (52 × 7 = 364)."
+  },
+  "55": {
+    "tipo": "logica",
+    "dificultad": "Difícil",
+    "pista": "_Sonrisa pícara mirando directo a cámara_: ~la suma de todos los enteros positivos desde~ *uno hasta diez*",
+    "explicacion": "Definición por contexto: emote numérico pícaro. Por la fórmula de Gauss, 1 + 2 + … + 10 = (10 × 11) / 2 = 55."
+  },
+  "69": {
+    "tipo": "logica",
+    "dificultad": "Difícil",
+    "pista": "_Sonrisa cómplice en silla azul_: ~el menor entero de dos cifras que suma quince y~ *se lee igual boca abajo*",
+    "explicacion": "Definición por contexto: emote numérico cómplice. Entre 69 y 96 (ambos suman 15 y son ambigramas rotacionales de 180°), el menor es 69."
+  },
+  "77": {
+    "tipo": "logica",
+    "dificultad": "Difícil",
+    "pista": "_Reacción atónita de perfil con pañuelo_: ~producto del cuarto primo por~ *el menor primo de dos cifras*",
+    "explicacion": "Definición por contexto: emote numérico de asombro. El cuarto número primo es 7 (2, 3, 5, 7) y el menor de dos cifras es 11; 7 × 11 = 77."
+  },
+  "83": {
+    "tipo": "logica",
+    "dificultad": "Difícil",
+    "pista": "_Gesto boquiabierto en camiseta sin mangas_: ~el número primo que supera en dos al cuadrado de~ *nueve*",
+    "explicacion": "Definición por contexto: emote numérico sorprendido. El cuadrado de 9 es 81; al sumarle 2 resulta el número primo 83."
+  },
+  "90": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Mirada seria hacia abajo con gorro_: ~los grados exactos que mide~ *un ángulo recto*",
+    "explicacion": "Definición por contexto: emote numérico serio. En geometría, todo ángulo recto mide exactamente 90 grados."
+  },
+  "95": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Sonrisa confiada con mano en la oreja_: ~diferencia entre cien y la raíz cuadrada de~ *veinticinco*",
+    "explicacion": "Definición por contexto: emote numérico confiado. La raíz cuadrada de 25 es 5, y 100 − 5 = 95."
+  },
+  "99": {
+    "tipo": "logica",
+    "dificultad": "Medio",
+    "pista": "_Mueca burlona sacando la lengua_: ~el cuadrado de diez disminuido en~ *la unidad*",
+    "explicacion": "Definición por contexto: emote numérico burlón. El cuadrado de diez es 100, y al restarle 1 queda 99."
+  },
+  "POLICE": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Alarma que inunda el chat cuando alguien suelta algo funable_, ~revolviendo~ *«pico» y «él»*",
+    "explicacion": "Contexto de uso: se spamea en broma cuando alguien dice algo comprometedor o ilegal. Anagrama: mezclando las letras de «pico» + «él» se forma POLICE."
+  },
+  "FIRE": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Lo que spamea el chat cuando un tema o momento está que arde_, ~al revolver~ *«fiera» sin su final*",
+    "explicacion": "Contexto de uso: se usa cuando el directo o una canción se prende al máximo. Quitando la última letra a «fiera» queda «fier», cuyo anagrama es FIRE."
+  },
+  "EDM": {
+    "tipo": "extremos",
+    "dificultad": "Difícil",
+    "pista": "_Lluvia del chat cuando cae un drop de electrónica_, ~juntando los extremos de~ *«edad»* ~y el inicio de~ *«música»*",
+    "explicacion": "Contexto de uso: estalla en el chat cuando suena música electrónica en directo. Extremos de «edad» (E, D) + inicial de «música» (M) = EDM."
+  },
+  "CLAP": {
+    "tipo": "oculta",
+    "dificultad": "Difícil",
+    "pista": "_Ovación del chat tras una jugada brillante o un cierre épico_, ~escondida en~ *«tecla para ganar»*",
+    "explicacion": "Contexto de uso: reconocimiento sonoro (o irónico) cuando el streamer acierta o termina un discurso. Palabra oculta dentro de «te[CLA P]ara ganar» → CLAP."
+  },
+  "catJAM": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Cabeceo al compás cuando suena un temazo en directo_, ~al unir~ *el comienzo de «catarata»* ~con~ *mermelada, en inglés*",
+    "explicacion": "Contexto de uso: el clásico universal del chat para acompañar cualquier buena canción. Comienzo de «catarata» (cat) + «jam» (mermelada / ritmo en inglés) = catJAM."
+  },
+  "peepoCheer": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Aliento entusiasta del chat para empujar al streamer_, ~al sumar~ *ranita del chat* ~y~ *vitorear, en inglés*",
+    "explicacion": "Contexto de uso: se spamea para apoyar a baulo en un reto o momento decisivo. «peepo» (ranita) + «Cheer» (vitorear, en inglés) = peepoCheer."
+  },
+  "Sadge": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Bajón colectivo del chat cuando todo sale mal o acaba el stream_, ~revolviendo~ *«seda» con la séptima letra*",
+    "explicacion": "Contexto de uso: decepción o tristeza compartida en el chat. «seda» + «g» (séptima letra del abecedario) revueltas forman Sadge."
+  },
+  "peepoHey": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Saludo cariñoso apenas arranca la transmisión_, ~al juntar~ *ranita del chat* ~con~ *«yeh» al revés*",
+    "explicacion": "Contexto de uso: el saludo clásico del chat al llegar al directo. «peepo» + «yeh» leído al revés («Hey») = peepoHey."
+  },
+  "AngelThump": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Emoción celestial ante un momento hermoso o nostálgico_, ~uniendo~ *mensajero alado* ~y~ *latido fuerte, en inglés*",
+    "explicacion": "Contexto de uso: se usa cuando una canción o escena conmueve al chat. «Angel» + «Thump» (golpe o latido, en inglés) = AngelThump."
+  },
+  "peepoShy": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Reacción ruborizada del chat al pedir algo con vergüenza_, ~al sumar~ *ranita del chat* ~y~ *«tímido», en inglés*",
+    "explicacion": "Contexto de uso: se usa para pedir perdón, cariño o un favor con ternura. «peepo» + «Shy» (tímido, en inglés) = peepoShy."
+  },
+  "Goldge": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Celebración ante una jugada brillante o suerte de oro_, ~al juntar~ *tanteo futbolero*, *el quinientos romano* ~y~ *el sufijo rana «ge»*",
+    "explicacion": "Contexto de uso: se spamea ante momentos valiosos o con mucha fortuna. «Gol» + «d» (500 romano) + «ge» = Goldge."
+  },
+  "NAHH": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Incredulidad tajante cuando alguien suelta un disparate_, ~al juntar~ *el símbolo químico del sodio* ~con~ *dos letras mudas*",
+    "explicacion": "Contexto de uso: rechazo inmediato ante una afirmación absurda o momento turbio. Símbolo del sodio (Na) + dos haches mudas (HH) = NAHH."
+  },
+  "MUGA": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Grito caótico y eufórico que inunda el chat_, ~al unir~ *la voz breve de la vaca* ~con~ *el símbolo químico del galio*",
+    "explicacion": "Contexto de uso: euforia ruidosa y humor absurdo muy típico del chat de baulo. «MU» + «Ga» (galio) = MUGA."
+  },
+  "WalterVibe": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Baile icónico de Breaking Bad cuando suena buena música en directo_, ~al unir~ *nombre de Heisenberg* ~y~ *buena onda, en inglés*",
+    "explicacion": "Contexto de uso: uno de los bailes más spameados en los streams de baulo. «Walter» (nombre real de Heisenberg) + «Vibe» = WalterVibe."
+  },
+  "bautiHINCHA": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Festejo pasional del canal como si fuera gol en la tribuna_, ~juntando~ *diminutivo de Bautista* ~y~ *aficionado futbolero*",
+    "explicacion": "Contexto de uso: celebración eufórica propia del chat de baulo. «bauti» + «HINCHA» = bautiHINCHA."
+  },
+  "OMEGALUL": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Carcajada descontrolada cuando ocurre un fallo ridículo_, ~uniendo~ *la última letra del alfabeto griego* ~con~ *risa gamer clásica*",
+    "explicacion": "Contexto de uso: se spamea ante momentos desternillantes o errores épicos. «OMEGA» + «LUL» = OMEGALUL."
+  },
+  "RaveTime": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Modo boliche activado en el chat cuando sube la electrónica_, ~al unir~ *«ver» con la primera vocal revueltas* ~y~ *«tiempo», en inglés*",
+    "explicacion": "Contexto de uso: luces de fiesta cuando suena techno o electrónica. Anagrama de «ver» + «a» («Rave») + «Time» = RaveTime."
+  },
+  "GAAG": {
+    "tipo": "oculta",
+    "dificultad": "Difícil",
+    "pista": "_Estallido ruidoso y absurdo de risa en el chat_, ~capicúa escondido en~ *«paga agua»*",
+    "explicacion": "Contexto de uso: grito humorístico muy característico del chat de baulo. Palabra oculta en «pa[GA AG]ua» → GAAG."
+  },
+  "peepoCute": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Reacción de ternura cuando pasa algo adorable en pantalla_, ~al sumar~ *ranita del chat* ~y~ *lo oculto en «discute poco»*",
+    "explicacion": "Contexto de uso: se usa en momentos tiernos o al ver mascotas. «peepo» + «Cute» (oculto en «dis[cute]») = peepoCute."
+  },
+  "MLADY": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Saludo caballeroso e irónico quitándose el sombrero_, ~el mil romano antes de~ *«dama», en inglés*",
+    "explicacion": "Contexto de uso: cortesía exagerada o sarcástica en el chat. «M» (1000 en números romanos) + «LADY» (dama, en inglés) = MLADY."
+  },
+  "PETTHESTREAMER": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Mimo masivo del chat para consolar o premiar al creador_, ~al juntar en inglés~ *«acariciar»*, *«el»* ~y~ *«quien transmite en vivo»*",
+    "explicacion": "Contexto de uso: muestra de cariño colectiva hacia baulo. «PET» + «THE» + «STREAMER» = PETTHESTREAMER."
+  },
+  "UHMM": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Silencio dudoso del chat cuando una explicación no convence_, ~última vocal antes de~ *la letra muda y dos miles romanos*",
+    "explicacion": "Contexto de uso: duda incómoda ante un argumento flojo o sospechoso. «U» + «H» + «MM» (dos 1000 romanos) = UHMM."
+  },
+  "Pog": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_Hype instantáneo ante una jugada inesperada_, ~al invertir las iniciales de~ *«golpe, oro y poder»*",
+    "explicacion": "Contexto de uso: asombro clásico del streaming ante grandes jugadas. Iniciales de «golpe, oro, poder» = «gop»; al revés → Pog."
+  },
+  "Ratge": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Se spamea ante jugadas tacañas, rastreras o sigilosas_, ~al revolver~ *«trae» con la séptima letra*",
+    "explicacion": "Contexto de uso: para señalar tácticas ratoneras o tacañas en broma. «trae» + «g» (séptima letra) revueltas forman Ratge."
+  },
+  "Cute": {
+    "tipo": "oculta",
+    "dificultad": "Difícil",
+    "pista": "_Adorno tierno que se superpone para suavizar otro emote_, ~escondido dentro de~ *«discute poco»*",
+    "explicacion": "Contexto de uso: moño que el chat combina sobre otros emotes para hacerlos adorables. Oculto dentro de «dis[CUTE] poco» → Cute."
+  },
+  "RAGEY": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Estallido de furia cuando una partida saca de quicio_, ~al desordenar~ *«ayer» más la séptima letra*",
+    "explicacion": "Contexto de uso: rabia exagerada del chat o del streamer tras perder. «ayer» + «g» (séptima letra) revueltas forman RAGEY."
+  },
+  "Prayge": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Súplica colectiva del chat cuando hace falta un milagro_, ~al juntar~ *«rezar», en inglés* ~con~ *el sufijo rana «ge»*",
+    "explicacion": "Contexto de uso: se spamea cruzando los dedos antes de una jugada decisiva o apuesta. «Pray» (rezar, en inglés) + «ge» = Prayge."
+  },
+  "CatDance": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Fiesta felina en el chat cuando el ritmo invita a celebrar_, ~uniendo~ *el inicio de «catálogo»* ~con~ *«caned» revuelto*",
+    "explicacion": "Contexto de uso: baile clásico del chat en momentos alegres o musicales. Comienzo de «catálogo» (Cat) + anagrama de «caned» (Dance) = CatDance."
+  },
+  "JE": {
+    "tipo": "extremos",
+    "dificultad": "Difícil",
+    "pista": "_Risa breve, pícara y cómplice del chat_, ~extremos de~ *«jefe»*",
+    "explicacion": "Contexto de uso: risita irónica o maliciosa muy spameada en el canal. Primera y última letra de «jefe» → JE."
+  },
+  "monkaS": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Nervios al límite cuando la jugada o el clic pende de un hilo_, ~revolviendo~ *«manos» con el símbolo del potasio*",
+    "explicacion": "Contexto de uso: el emote universal de tensión y sudor frío. «manos» + «K» (símbolo químico del potasio) revueltas dan monkaS."
+  },
+  "sigma": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Actitud fría e imperturbable celebrada con ironía en el chat_, ~al revolver~ *«amigas» sin una vocal repetida*",
+    "explicacion": "Contexto de uso: meme de confianza fría y estoica. Quitando una «a» a «amigas» queda «amigs», cuyo anagrama es sigma."
+  },
+  "flagArgentina": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Orgullo patrio del chat cada vez que mencionan al país del streamer_, ~al sumar~ *«golf» cambiando «o» por «a» y revuelto* ~con~ *tierra del mate y Messi*",
+    "explicacion": "Contexto de uso: se spamea ante cualquier mención al país de baulo. «galf» revuelto («flag») + «Argentina» = flagArgentina."
+  },
+  "PepeLaugh": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Risa cómplice cuando el chat sabe la trampa y el streamer aún no_, ~al sumar~ *rana famosa de memes* ~con~ *carcajada, en inglés*",
+    "explicacion": "Contexto de uso: clásico cuando el streamer está a punto de caer en una trampa que el chat ya conoce. «Pepe» + «Laugh» = PepeLaugh."
+  },
+  "SAJ": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_Pena dramática e irónica en el chat_, ~al leer al revés~ *«jaspe» sin sus dos últimas letras*",
+    "explicacion": "Contexto de uso: versión breve y graciosa de tristeza en el chat. «jaspe» sin «pe» = «jas»; leído al revés → SAJ."
+  },
+  "ronaldoPls": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Baile futbolero viral que prende la fiesta en directo_, ~al unir~ *«alondro» revuelto* ~con~ *«por favor» abreviado en inglés*",
+    "explicacion": "Contexto de uso: baile icónico muy spameado con música festiva. Anagrama de «alondro» («ronaldo») + «Pls» = ronaldoPls."
+  },
+  "HAHAHA": {
+    "tipo": "repeticion",
+    "dificultad": "Difícil",
+    "pista": "_Burla sonora a gritos ante un error obvio_, ~tres veces la sílaba~ *«ha»*",
+    "explicacion": "Contexto de uso: carcajada exagerada del chat para reírse de una situación cómica. «HA» repetido tres veces = HAHAHA."
+  },
+  "War": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_Recuerdo traumático del chat ante un momento caótico o doloroso_, ~al invertir~ *«crudo», en inglés*",
+    "explicacion": "Contexto de uso: mirada perdida estilo flashback ante recuerdos duros o partidas infernales. «raw» (crudo, en inglés) invertido → War."
+  },
+  "Teddy": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Compañía afectuosa que se superpone para abrazar a otro emote_, ~al unir~ *«té» sin tilde*, *dos quinientos romanos* ~y~ *la penúltima letra*",
+    "explicacion": "Contexto de uso: peluche superpuesto en el chat para dar ternura o consuelo. «Te» + «DD» (500+500) + «y» = Teddy."
+  },
+  "mhm": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Asentimiento escéptico o pensativo cuando nadie se fía del todo_, ~capicúa con~ *la letra muda entre dos miles romanos*",
+    "explicacion": "Contexto de uso: reacción breve de duda o ironía en el chat. «M» (1000) + «H» (letra muda) + «M» (1000) = mhm."
+  },
+  "peepoRiot": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Rebelión en broma del chat cuando exige que cambie algo ya_, ~uniendo~ *ranita del chat* ~y~ *«trío» revuelto*",
+    "explicacion": "Contexto de uso: protesta divertida del chat cuando pide otro juego o reclama algo. «peepo» + anagrama de «trío» («Riot») = peepoRiot."
+  },
+  "WTF": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_Shock absoluto cuando algo rompe toda lógica en pantalla_, ~invirtiendo las iniciales de~ *«fuego, tormenta y wifi»*",
+    "explicacion": "Contexto de uso: reacción instantánea ante lo inexplicable. Iniciales de «fuego, tormenta, wifi» = «ftw»; invertidas → WTF."
+  },
+  "AWW": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Suspiro de ternura cuando aparece algo adorable en directo_, ~primera vocal seguida de~ *dos uves dobles*",
+    "explicacion": "Contexto de uso: reacción cariñosa ante mascotas o momentos dulces. «A» + «WW» = AWW."
+  },
+  "AAAA": {
+    "tipo": "repeticion",
+    "dificultad": "Medio",
+    "pista": "_Grito de desesperación total cuando todo colapsa_, ~cuatro veces seguidas~ *la primera vocal*",
+    "explicacion": "Contexto de uso: se spamea al borde del colapso ante una tragedia o susto. La vocal «A» repetida cuatro veces = AAAA."
+  },
+  "ALERT": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Aviso urgente en el chat cuando pasa algo que nadie debe perderse_, ~al desordenar~ *«letra»*",
+    "explicacion": "Contexto de uso: señal roja para llamar la atención de inmediato. Anagrama exacto de «letra» → ALERT."
+  },
+  "Aware": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Realización sombría cuando el chat cae en la cuenta de una verdad incómoda_, ~al unir~ *la primera vocal* ~con~ *las últimas cuatro letras de «software»*",
+    "explicacion": "Contexto de uso: se usa al tomar conciencia de algo inquietante o del paso del tiempo. «A» + «ware» (final de software) = Aware."
+  },
+  "BASED": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Aprobación del chat cuando alguien suelta una verdad sin filtro_, ~al revolver~ *«sabe» con la cuarta letra*",
+    "explicacion": "Contexto de uso: aplauso a una opinión firme y sin rodeos. «sabe» + «d» (cuarta letra) revueltas forman BASED."
+  },
+  "Bedge": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Señal del chat de que algo da sueño o toca irse a dormir_, ~al unir~ *«cama», en inglés* ~con~ *el sufijo rana «ge»*",
+    "explicacion": "Contexto de uso: para despedirse a descansar o bromear con que algo aburre. «Bed» (cama, en inglés) + «ge» = Bedge."
+  },
+  "CALMA": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Gesto futbolero para enfriar la euforia y bajar las pulsaciones_, ~al desordenar~ *«clama»*",
+    "explicacion": "Contexto de uso: se usa cuando el chat se acelera demasiado y toca mantener la serenidad. Anagrama de «clama» → CALMA."
+  },
+  "CINE": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Elogio máximo cuando una escena o jugada parece una obra maestra_, ~revolviendo~ *«cien»*",
+    "explicacion": "Contexto de uso: veredicto del chat ante un momento épico digno de película. Anagrama exacto de «cien» → CINE."
+  },
+  "Death": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Contraste apocalíptico de «Life» cuando todo queda en ruinas_, ~al mezclar~ *«date» con la letra muda*",
+    "explicacion": "Contexto de uso: expresa destrucción total o ruina tras un desastre. «date» + «h» (letra muda) revueltas forman Death."
+  },
+  "FEAR": {
+    "tipo": "oculta",
+    "dificultad": "Difícil",
+    "pista": "_Escalofrío del chat cuando algo da auténtico terror_, ~escondido dentro de~ *«café ardiente» sin tilde*",
+    "explicacion": "Contexto de uso: pánico cómico o real ante juegos de terror o sustos. Oculto en «ca[FE AR]diente» → FEAR."
+  },
+  "FOCUS": {
+    "tipo": "oculta",
+    "dificultad": "Difícil",
+    "pista": "_Llamado a ponerse serio y no fallar en el momento clave_, ~escondido en~ *«triunfo custom»*",
+    "explicacion": "Contexto de uso: cuando toca dejar las bromas y concentrarse al máximo en la partida. Oculto en «triun[FO CUS]tom» → FOCUS."
+  },
+  "FULBO": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Pasión redonda que enciende el chat cada vez que hay partido_, ~al revolver~ *«bulo» con la sexta letra*",
+    "explicacion": "Contexto de uso: se spamea cuando se habla o se miran partidos de fútbol. «bulo» + «f» (sexta letra) revueltas dan FULBO."
+  },
+  "Firmo": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Sello de aprobación total cuando se acepta un trato o frase magistral_, ~revolviendo~ *«morfi»*",
+    "explicacion": "Contexto de uso: se usa cuando el chat acepta sin dudar una propuesta o aplaude un guion perfecto. Anagrama de «morfi» → Firmo."
+  },
+  "HAPPY": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Alegría contagiosa del chat cuando todo marcha de maravilla_, ~sumando~ *«ha»*, *dos letras pe* ~y~ *la penúltima letra*",
+    "explicacion": "Contexto de uso: felicidad pura y sonriente en el directo. «HA» + «PP» + «Y» = HAPPY."
+  },
+  "Hmmm": {
+    "tipo": "charada",
+    "dificultad": "Medio",
+    "pista": "_Duda prolongada cuando el chat sospecha que algo no cierra_, ~la letra muda antes de~ *tres emes*",
+    "explicacion": "Contexto de uso: reflexión o sospecha ante un comentario ambiguo. «H» + «mmm» = Hmmm."
+  },
+  "KEK": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Risa legendaria de internet ante una ocurrencia inesperada_, ~capicúa con~ *dos símbolos del potasio encerrando la segunda vocal*",
+    "explicacion": "Contexto de uso: variante mítica de risa en directos. Símbolo del potasio (K) a ambos lados de la «E» → KEK."
+  },
+  "LMAO": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Carcajada rodando por el suelo ante un momento desopilante_, ~al revolver~ *«malo»*",
+    "explicacion": "Contexto de uso: siglas inglesas clásicas cuando algo provoca mucha risa. Anagrama exacto de «malo» → LMAO."
+  },
+  "LOL": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_La sigla de risa más veterana de internet_, ~capicúa formado por~ *«lo»* ~y~ *la duodécima letra*",
+    "explicacion": "Contexto de uso: reacción clásica de risa rápida en el chat. «LO» + «L» (duodécima letra del alfabeto) = LOL."
+  },
+  "Life": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Paz absoluta del chat al apreciar un momento lindo o tranquilo_, ~al desordenar~ *«fiel»*",
+    "explicacion": "Contexto de uso: serenidad y optimismo, opuesto directo de Death. Anagrama exacto de «fiel» → Life."
+  },
+  "MAJ": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_Pena cómica y exagerada hermana de «SAJ»_, ~al leer al revés~ *mermelada o ritmo, en inglés*",
+    "explicacion": "Contexto de uso: tristeza humorística del chat. «JAM» leído de derecha a izquierda → MAJ."
+  },
+  "MODS": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Llamado en broma a quienes banean y mantienen el orden en el chat_, ~al revolver~ *«dos» junto al mil romano*",
+    "explicacion": "Contexto de uso: se spamea para invocar a los moderadores del canal. «dos» + «M» (1000 en números romanos) revueltas forman MODS."
+  },
+  "Madge": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Indignación del chat cuando algo molesta o resulta injusto_, ~al revolver~ *«gema» con la cuarta letra*",
+    "explicacion": "Contexto de uso: enfado clásico en los directos. «gema» + «d» (cuarta letra) revueltas forman Madge."
+  },
+  "Modge": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Guiño a quienes barren y limpian el chat_, ~al unir~ *«modo» sin su final* ~con~ *el sufijo rana «ge»*",
+    "explicacion": "Contexto de uso: representa a los moderadores ordenando el chat. «modo» sin «o» («Mod») + «ge» = Modge."
+  },
+  "Night": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Calma nocturna del chat cuando cae la madrugada_, ~al revolver~ *«thing»*",
+    "explicacion": "Contexto de uso: versión nocturna y serena de Life bajo la luna. Anagrama exacto de «thing» (cosa, en inglés) → Night."
+  },
+  "PAIN": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Sufrimiento dramático tras una derrota cruel o mala racha_, ~al desordenar~ *«pina»*",
+    "explicacion": "Contexto de uso: expresa dolor exagerado o frustración profunda. Anagrama de «pina» → PAIN."
+  },
+  "PAUSE": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Freno instantáneo cuando una frase suena con doble sentido_, ~al revolver~ *«púas» sin tilde más la segunda vocal*",
+    "explicacion": "Contexto de uso: se spamea al instante cuando alguien dice algo sacado de contexto. «puas» + «e» revueltas dan PAUSE."
+  },
+  "PEAK": {
+    "tipo": "oculta",
+    "dificultad": "Difícil",
+    "pista": "_Veredicto del chat cuando el contenido alcanza su punto máximo_, ~escondido dentro de~ *«golpea kilos»*",
+    "explicacion": "Contexto de uso: para coronar un momento, juego o canción insuperable. Oculto en «gol[PEA K]ilos» → PEAK."
+  },
+  "PFFT": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Sonido de aguantarse la risa ante un comentario absurdo_, ~inicial de «político» antes de~ *dos efes y la inicial de «todo»*",
+    "explicacion": "Contexto de uso: contener la carcajada con ironía. «P» + «FF» + «T» = PFFT."
+  },
+  "Panic": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Caos total en el chat cuando la situación se descontrola_, ~al revolver~ *«pican»*",
+    "explicacion": "Contexto de uso: nerviosismo desatado cuando todo empieza a salir mal a la vez. Anagrama exacto de «pican» → Panic."
+  },
+  "Potge": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Buena suerte o momento mágico en clave de vasija del chat_, ~uniendo~ *olla, en inglés* ~con~ *el sufijo «ge»*",
+    "explicacion": "Contexto de uso: meme sonriente ligado a suerte y cartas mágicas. «Pot» (olla, en inglés) + «ge» = Potge."
+  },
+  "ROJA": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Sanción máxima que pide el chat para expulsar o banear en broma_, ~al revolver~ *«jaro»*",
+    "explicacion": "Contexto de uso: tarjeta de expulsión arbitral usada para pedir ban en broma. Anagrama de «jaro» → ROJA."
+  },
+  "RUNN": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Orden urgente del chat para escapar cuanto antes de un peligro_, ~«correr» en inglés~ *duplicando su última letra*",
+    "explicacion": "Contexto de uso: cuando el personaje debe huir de inmediato en un juego. «RUN» + «N» = RUNN."
+  },
+  "SAD": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_Desánimo seco y dramático ante una mala noticia_, ~al leer al revés~ *«das»*",
+    "explicacion": "Contexto de uso: tristeza directa en el chat. «das» leído al revés → SAD."
+  },
+  "SEXO": {
+    "tipo": "oculta",
+    "dificultad": "Difícil",
+    "pista": "_Meme cómico del chat hispano cuando algo resulta demasiado bueno_, ~escondido dentro de~ *«luces éxodo» sin tilde*",
+    "explicacion": "Contexto de uso: exageración humorística muy usada en streams hispanos. Oculto en «luce[S EXO]do» → SEXO."
+  },
+  "SIU": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_Grito mundial de victoria popularizado en las canchas_, ~al invertir~ *«Luis» sin su inicial*",
+    "explicacion": "Contexto de uso: celebración triunfal icónica de Cristiano Ronaldo. «Luis» sin «L» = «uis»; al revés → SIU."
+  },
+  "SLAY": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Aplauso con glamour cuando alguien arrasa con estilo propio_, ~al revolver~ *«sal» y la penúltima letra*",
+    "explicacion": "Contexto de uso: celebrar una jugada o actitud impecable con tono chic. «sal» + «y» revueltas forman SLAY."
+  },
+  "Sisi": {
+    "tipo": "repeticion",
+    "dificultad": "Medio",
+    "pista": "_Confirmación rápida y repetida cuando el chat da toda la razón_, ~dos veces~ *la séptima nota musical*",
+    "explicacion": "Contexto de uso: asentimiento efusivo e irónico del chat. La nota «si» escrita dos veces = Sisi."
+  },
+  "Smoge": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Desahogo agotado del chat tras una escena estresante_, ~al revolver~ *«gomes»*",
+    "explicacion": "Contexto de uso: estrés o resignación fumando tranquilo. Anagrama exacto de «gomes» → Smoge."
+  },
+  "Sus": {
+    "tipo": "oculta",
+    "dificultad": "Difícil",
+    "pista": "_Desconfianza inmediata cuando una frase suena muy sospechosa_, ~escondida en~ *«asustar al chat»*",
+    "explicacion": "Contexto de uso: reacción ante comentarios ambiguos o actitudes dudosas. Oculta en «a[SUS]tar» → Sus."
+  },
+  "Susge": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Mirada de reojo cuando el chat duda de la verdad del streamer_, ~juntando~ *«sospechoso» abreviado en jerga gamer* ~y~ *el sufijo «ge»*",
+    "explicacion": "Contexto de uso: sospecha colectiva en el chat. «Sus» + «ge» = Susge."
+  },
+  "THIS": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Respaldo total a un comentario acertado del chat_, ~al revolver~ *«hits»*",
+    "explicacion": "Contexto de uso: se usa para señalar y apoyar al cien por ciento una frase. Anagrama de «hits» → THIS."
+  },
+  "TWEAK": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Perder la cordura por completo en pleno directo_, ~al unir~ *la inicial de «todo»* ~con~ *«débil», en inglés*",
+    "explicacion": "Contexto de uso: cuando alguien se desquicia o actúa frenéticamente. «T» + «weak» (débil, en inglés) = TWEAK."
+  },
+  "Tssk": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Regaño juguetón cuando el chat dice que no con el dedo_, ~inicial de «tarde» antes de~ *dos eses y el símbolo del potasio*",
+    "explicacion": "Contexto de uso: reproche en broma ante un error o travesura. «T» + «ss» + «k» = Tssk."
+  },
+  "VOID": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Giro perturbador o historia turbia que hiela al chat_, ~al revolver~ *«divo»*",
+    "explicacion": "Contexto de uso: se spamea cuando una anécdota o clip se vuelve oscuro y tétrico. Anagrama exacto de «divo» → VOID."
+  },
+  "Wave": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Saludo o despedida rápida al entrar y salir del directo_, ~al unir~ *la uve doble* ~con~ *un pájaro en tres letras*",
+    "explicacion": "Contexto de uso: saludo breve en el chat. «W» + «ave» = Wave."
+  },
+  "YEP": {
+    "tipo": "inversion",
+    "dificultad": "Difícil",
+    "pista": "_El sí más seco e irónico de la historia del chat_, ~al leer al revés~ *«peya» sin su final*",
+    "explicacion": "Contexto de uso: afirmación minimalista y sarcástica del chat. «peya» sin «a» = «pey»; invertido → YEP."
+  },
+  "Yump": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Salto de pura alegría cuando el chat festeja con ritmo_, ~al revolver~ *«muy» con la inicial de «paso»*",
+    "explicacion": "Contexto de uso: celebración energética saltando en el chat. «muy» + «p» revueltas forman Yump."
+  },
+  "bKEK": {
+    "tipo": "charada",
+    "dificultad": "Medio",
+    "pista": "_Carcajada pícara con el sello propio del streamer_, ~inicial de baulo seguida de~ *risa clásica del chat*",
+    "explicacion": "Contexto de uso: versión propia de baulo del emote KEK. «b» + «KEK» = bKEK."
+  },
+  "bSAD": {
+    "tipo": "charada",
+    "dificultad": "Medio",
+    "pista": "_Bajón propio del canal cuando el streamer se queda cabizbajo_, ~inicial de baulo antes de~ *«triste», en inglés*",
+    "explicacion": "Contexto de uso: versión local del canal para momentos tristes. «b» + «SAD» = bSAD."
+  },
+  "barto": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Personaje amarillo realista convertido en meme icónico del canal_, ~al desordenar~ *«brota»*",
+    "explicacion": "Contexto de uso: uno de los memes internos más queridos del chat de baulo. Anagrama exacto de «brota» → barto."
+  },
+  "coco": {
+    "tipo": "repeticion",
+    "dificultad": "Difícil",
+    "pista": "_La mascota dorada más querida cuando asoma en cámara_, ~duplicando~ *el prefijo de compañía*",
+    "explicacion": "Contexto de uso: el perro dorado del canal, recibido siempre con cariño. «co» repetido dos veces = coco."
+  },
+  "dans": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Baile felino que inunda el chat cuando suena buen ritmo_, ~al revolver~ *«san» junto al quinientos romano*",
+    "explicacion": "Contexto de uso: emote bailable clásico del chat de baulo. «san» + «D» (500 en números romanos) revueltas forman dans."
+  },
+  "dansi": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Dúo tierno que celebra bailando en el chat_, ~al mezclar~ *«días» sin tilde más la decimocuarta letra*",
+    "explicacion": "Contexto de uso: variante adorable de dans con dos gatitos bailando. «dias» + «n» revueltas forman dansi."
+  },
+  "kenny": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Mascota felina muy querida de la comunidad_, ~al unir~ *muñeco compañero de Barbie* ~con~ *«ny»*",
+    "explicacion": "Contexto de uso: el gato naranja entrañable del canal. «ken» + «ny» = kenny."
+  },
+  "like": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Visto bueno instantáneo del chat cuando algo convence_, ~al revolver~ *«leí» sin tilde con el símbolo del potasio*",
+    "explicacion": "Contexto de uso: aprobación rápida de una idea o jugada. «lei» + «K» (potasio) revueltas forman like."
+  },
+  "oka": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Conformidad breve cuando el chat acepta sin discutir_, ~al revolver~ *«koala» sin sus dos últimas letras*",
+    "explicacion": "Contexto de uso: respuesta corta de visto bueno. «koala» sin «la» = «koa»; revuelto → oka."
+  },
+  "plink": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Gato mirando fijo al compás de sonidos sutiles o silencios_, ~al revolver~ *«pink» abrazando la duodécima letra*",
+    "explicacion": "Contexto de uso: emote felino adorable muy usado con ritmos suaves o miradas fijas. «pink» + «l» revueltas dan plink."
+  },
+  "uuh": {
+    "tipo": "charada",
+    "dificultad": "Medio",
+    "pista": "_Desconcierto tonto del chat que suele acompañar a «buh»_, ~dos últimas vocales antes de~ *la letra muda*",
+    "explicacion": "Contexto de uso: confusión cómica habitual en el chat. «uu» + «h» = uuh."
+  },
+  "walti": {
+    "tipo": "anagrama",
+    "dificultad": "Difícil",
+    "pista": "_Gato atigrado muy querido del canal mirando de cerca_, ~al revolver~ *«tila» junto a la uve doble*",
+    "explicacion": "Contexto de uso: mascota felina entrañable de la comunidad de baulo. «tila» + «w» revueltas forman walti."
+  },
+  "xdd": {
+    "tipo": "charada",
+    "dificultad": "Difícil",
+    "pista": "_Carcajada burlona y caótica omnipresente en el chat_, ~en números romanos: diez antes de~ *dos quinientos*",
+    "explicacion": "Contexto de uso: la risa maliciosa favorita del chat moderno. En números romanos, 10 es X y 500 es D → X + D + D = xdd."
+  }
+}
