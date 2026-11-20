@@ -3,6 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "description": "Críptico Emotes: el críptico diario de los emotes 7TV del canal de baulo.",
   "scripts": {
     "dev": "npm run puzzles && vite",

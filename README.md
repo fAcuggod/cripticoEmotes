@@ -30,7 +30,7 @@ npm run dev
 ## Despliegue
 
 - **GitHub Pages**: flujo automático en [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
-- **Vercel**: configuración lista en [`vercel.json`](vercel.json) (`vite`, `npm run build`, `dist/`). Puedes importarlo en un clic desde [vercel.com/new](https://vercel.com/new/clone?repository-url=https://github.com/fAcuggod/cripticoEmotes).
+- **Vercel**: configuración lista en [`vercel.json`](vercel.json) (`vite`, `npm run build`, `dist/`). Impórtalo directamente desde [vercel.com/new](https://vercel.com/new) eligiendo tu repositorio `fAcuggod/cripticoEmotes` (sin clonar uno nuevo).
 
 ## Enlaces
 
