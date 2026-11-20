@@ -1,0 +1,326 @@
+{
+  "FRRR": {
+    "def": "joven con gorro amarillo sonriendo",
+    "desc": "Streamer con auriculares sonriendo relajado; expresión de afirmación en el chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "emociona": {
+    "def": "técnico cubriéndose la cara conmovido",
+    "desc": "Lionel Scaloni llorando de emoción con buzo celeste; se usa ante momentos conmovedores.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "JATEJODE": {
+    "def": "técnico riéndose incrédulo en banda",
+    "desc": "Entrenador haciendo gesto de resignación divertida; expresión de incredulidad.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "FORT": {
+    "def": "empresario sonriendo entre flashes",
+    "desc": "Ricardo Fort rodeado de gente en una fiesta; icono del humor y glamour argentino.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "dibupija": {
+    "def": "arquero argentino mirando con gesto",
+    "desc": "Emiliano Martínez en la cancha; emote futbolero con nombre subido de tono.",
+    "partes": null,
+    "flag": "nsfw"
+  },
+  "SpeedVibe": {
+    "def": "streamer de rojo bailando feliz",
+    "desc": "Joven con camiseta roja agitando los brazos al ritmo; se usa con música animada.",
+    "partes": [
+      [
+        "Speed",
+        "streamer famoso"
+      ],
+      [
+        "Vibe",
+        "buena onda, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "hMirada": {
+    "def": "hombre con gafas observando serio",
+    "desc": "Persona ajustándose los anteojos observando fijo; expresa atención o sospecha.",
+    "partes": [
+      [
+        "h",
+        "letra hache"
+      ],
+      [
+        "Mirada",
+        "forma de observar"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ZEKOpls": {
+    "def": "dos chicos bailando en habitación",
+    "desc": "Jóvenes moviéndose divertidos frente a cámara; emote bailable de la comunidad.",
+    "partes": [
+      [
+        "ZEKO",
+        "streamer argentino"
+      ],
+      [
+        "pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "cityboy": {
+    "def": "vaquero animado gritando con manos",
+    "desc": "Personaje de caricatura con sombrero exclamando; se usa para festejar una jugada picante.",
+    "partes": [
+      [
+        "city",
+        "ciudad, en inglés"
+      ],
+      [
+        "boy",
+        "chico, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Parcege": {
+    "def": "rana con gorra y camiseta amarilla",
+    "desc": "Pepe vestido con colores de Colombia; variante regional amistosa de Okayge.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "driving": {
+    "def": "rana con gafas conduciendo",
+    "desc": "Pepe con lentes oscuros sujetando un volante; se usa en juegos de autos o viajes.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "CoinTime": {
+    "def": "mano lanzando moneda dorada",
+    "desc": "Moneda pixelada girando en el aire; se usa para decidir algo al azar o apuestas.",
+    "partes": [
+      [
+        "Coin",
+        "moneda, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BauloVibe": {
+    "def": "streamer bailando en cuarto oscuro",
+    "desc": "El streamer moviéndose al ritmo bajo luz tenue; se usa cuando suena buena música.",
+    "partes": [
+      [
+        "Baulo",
+        "nombre del streamer"
+      ],
+      [
+        "Vibe",
+        "buena onda, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "FULBO": {
+    "def": "ranitas mirando el arco con palomitas",
+    "desc": "Cuatro Peepos observando un partido de fútbol; se usa cuando hablan o miran fútbol.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "sospechoso": {
+    "def": "esponja mirando de reojo dudosa",
+    "desc": "Bob Esponja entrecerrando los ojos con desconfianza; se usa ante algo raro.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "MunchinNacho": {
+    "def": "chico comiendo de un tazón",
+    "desc": "Joven con cuchara comiendo tranquilo frente a cámara; se usa al almorzar o ver drama.",
+    "partes": [
+      [
+        "Munchin",
+        "comiendo, en jerga inglesa"
+      ],
+      [
+        "Nacho",
+        "nombre propio"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "peron": {
+    "def": "político histórico alzando brazos",
+    "desc": "Fotografía clásica en blanco y negro saludando con ambos brazos; meme histórico argentino.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Medit": {
+    "def": "rana en posición de loto calmada",
+    "desc": "Pepe con los ojos cerrados meditando en paz; se usa para pedir serenidad en el chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "morito": {
+    "def": "niño sentado junto a señor de traje",
+    "desc": "Fotografía antigua en una mesa; meme interno de la comunidad.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SleepyB": {
+    "def": "streamer recostado descansando",
+    "desc": "El streamer con los brazos detrás de la cabeza relajado; versión propia de Sleepy.",
+    "partes": [
+      [
+        "Sleepy",
+        "soñoliento, en inglés"
+      ],
+      [
+        "B",
+        "inicial del streamer"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Yikes": {
+    "def": "joven con cascos haciendo mueca",
+    "desc": "Chico mirando atónito y tenso a cámara; se usa ante un comentario o momento incómodo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "elDemente": {
+    "def": "joven de traje ajustándose gafas",
+    "desc": "Creador argentino posando elegante con gafas; meme clásico de YouTube hispano.",
+    "partes": [
+      [
+        "el",
+        "artículo masculino"
+      ],
+      [
+        "Demente",
+        "loco o apodo de youtuber"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "pepuPls": {
+    "def": "chico de celeste bailando en cuarto",
+    "desc": "Joven moviendo los brazos con ritmo; emote festivo de la comunidad.",
+    "partes": [
+      [
+        "pepu",
+        "apodo del canal"
+      ],
+      [
+        "Pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "aGrumear": {
+    "def": "joven con gorro celebrando con grupo",
+    "desc": "Chico rodeado de amigos festejando; meme interno del chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "QUIENERES": {
+    "def": "streamer mirando perplejo en silla",
+    "desc": "Joven girando con gesto desconcertado; se usa cuando nadie reconoce al mencionado.",
+    "partes": [
+      [
+        "QUIEN",
+        "qué persona"
+      ],
+      [
+        "ERES",
+        "verbo ser en segunda persona"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "rSAJ": {
+    "def": "joven con gorro amarillo llorando",
+    "desc": "Streamer con auriculares y lágrima dibujada; versión local de SAJ.",
+    "partes": [
+      [
+        "r",
+        "inicial de streamer"
+      ],
+      [
+        "SAJ",
+        "tristeza cómica del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "rLOL": {
+    "def": "joven con gorro amarillo riendo",
+    "desc": "Streamer con auriculares soltando una gran carcajada; versión local de LOL.",
+    "partes": [
+      [
+        "r",
+        "inicial de streamer"
+      ],
+      [
+        "LOL",
+        "risa, en jerga de internet"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "rageydans": {
+    "def": "joven con gorro bailando agitado",
+    "desc": "Chico moviéndose con frenesí en su habitación; mezcla de baile y rabia cómica.",
+    "partes": [
+      [
+        "ragey",
+        "furioso, en jerga del chat"
+      ],
+      [
+        "dans",
+        "baile del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "RakaiR": {
+    "def": "joven con gorro haciendo gesto",
+    "desc": "Streamer moviendo las manos al ritmo con auriculares blancos; emote del canal.",
+    "partes": [
+      [
+        "Rakai",
+        "streamer estadounidense"
+      ],
+      [
+        "R",
+        "letra erre"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "rNet": {
+    "def": "joven con gorro sosteniendo billetes",
+    "desc": "Chico con auriculares mostrando un abanico de dólares; se usa al ganar apuestas.",
+    "partes": [
+      [
+        "r",
+        "inicial de streamer"
+      ],
+      [
+        "Net",
+        "red o ganancia neta, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  }
+}

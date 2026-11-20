@@ -1,0 +1,330 @@
+{
+  "ESKIZO": {
+    "def": "hombre gritando en silla azul",
+    "desc": "Chico gritando desesperado; se usa cuando alguien dice algo descabellado o fuera de control.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "wideFireTime": {
+    "def": "llamas ardiendo a lo ancho",
+    "desc": "Fuego estirado horizontalmente; efecto que se añade en momentos muy intensos.",
+    "partes": [
+      [
+        "wide",
+        "ancho, en inglés"
+      ],
+      [
+        "Fire",
+        "fuego, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ALLIN": {
+    "def": "torres de fichas verdes",
+    "desc": "Pilas gigantes de fichas de casino; se usa al apostar todos los puntos en una jugada.",
+    "partes": [
+      [
+        "ALL",
+        "todo, en inglés"
+      ],
+      [
+        "IN",
+        "adentro, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "pepeGuitar": {
+    "def": "rana con sombrero tocando cuerdas",
+    "desc": "Pepe con sombrero tocando guitarra roja; se usa cuando suena música acústica o country.",
+    "partes": [
+      [
+        "pepe",
+        "rana de internet"
+      ],
+      [
+        "Guitar",
+        "instrumento de seis cuerdas, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "TouchGrass": {
+    "def": "mano acariciando el césped",
+    "desc": "Brazo extendido tocando el pasto verde; se usa para mandar a alguien a salir de internet.",
+    "partes": [
+      [
+        "Touch",
+        "tocar, en inglés"
+      ],
+      [
+        "Grass",
+        "césped, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "WideSusge": {
+    "def": "rana estirada mirando con recelo",
+    "desc": "Pepe muy ancho con ojos entrecerrados; expresa sospecha exagerada.",
+    "partes": [
+      [
+        "Wide",
+        "ancho, en inglés"
+      ],
+      [
+        "Susge",
+        "rana sospechosa del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "MiniTssk": {
+    "def": "dedito diminuto regañando",
+    "desc": "Mano pequeña moviendo el índice en el borde inferior; versión mini de Tssk.",
+    "partes": [
+      [
+        "Mini",
+        "pequeño, como prefijo"
+      ],
+      [
+        "Tssk",
+        "sonido de reproche"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "pL": {
+    "def": "ranita minúscula abajo",
+    "desc": "Peepo diminuto en la parte inferior de un recuadro alto; se usa en bromas de tamaño.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "ONEMORE": {
+    "def": "minero cerca de los diamantes",
+    "desc": "Ilustración del minero que se rinde a pasos de los diamantes; meme para intentar una vez más.",
+    "partes": [
+      [
+        "ONE",
+        "uno, en inglés"
+      ],
+      [
+        "MORE",
+        "más, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "aim": {
+    "def": "mira de rifle en el bosque",
+    "desc": "Escena de juego apuntando con un arma; se usa para juzgar la puntería del streamer.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "EZWink": {
+    "def": "rana bajando lentes oscuros",
+    "desc": "Pepe con gafas negras guiñando con aire ganador; se usa tras una victoria sencilla.",
+    "partes": [
+      [
+        "EZ",
+        "fácil, en jerga gamer"
+      ],
+      [
+        "Wink",
+        "guiño, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "VolumeOff": {
+    "def": "barra deslizante de sonido",
+    "desc": "Control de volumen bajando al mínimo; se usa cuando alguien grita o canta mal.",
+    "partes": [
+      [
+        "Volume",
+        "nivel de sonido, en inglés"
+      ],
+      [
+        "Off",
+        "apagado, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "bitrate": {
+    "def": "rostro de gato muy pixelado",
+    "desc": "Gato reducido a pocos cuadros borrosos; se usa cuando baja la calidad del directo.",
+    "partes": [
+      [
+        "bit",
+        "unidad binaria"
+      ],
+      [
+        "rate",
+        "tasa, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "happi": {
+    "def": "carita amarilla muy contenta",
+    "desc": "Emoticono pixelado con mejillas rosadas y sonrisa radiante; expresa felicidad pura.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Rap": {
+    "def": "carita amarilla con micrófono",
+    "desc": "Emoticono pixelado sosteniendo un micro mientras gesticula; se usa cuando alguien rima.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "puno": {
+    "def": "ranita lanzando un golpe",
+    "desc": "Peepo acercando el puño a la pantalla; se usa para dar un golpe en broma o chocar puños.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "plink": {
+    "def": "minino blanco mirando muy cerca",
+    "desc": "Gato acercando su nariz rosada al lente; emote adorable usado al ritmo de sonidos suaves.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Timeout": {
+    "def": "carita encerrada en un frasco",
+    "desc": "Emoji triste atrapado dentro de un tarro de vidrio; se usa cuando silencian a alguien en el chat.",
+    "partes": [
+      [
+        "Time",
+        "tiempo, en inglés"
+      ],
+      [
+        "out",
+        "fuera, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "NOOOOOOOOOO": {
+    "def": "personaje de anime llorando a gritos",
+    "desc": "Escena dramática de anime gritando entre lágrimas; se usa ante una tragedia del juego.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoSleep": {
+    "def": "ranita dormida con gorro estrellado",
+    "desc": "Peepo con gorro azul descansando sobre la mesa; se usa cuando algo da sueño.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Sleep",
+        "dormir, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ronaldoPls": {
+    "def": "silueta bailando con gran ritmo",
+    "desc": "Meme viral bailando de espaldas y costado; se usa cuando suena música festiva.",
+    "partes": [
+      [
+        "ronaldo",
+        "astro del fútbol"
+      ],
+      [
+        "Pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "monkaOMEGA": {
+    "def": "rana con ojos enormes asustada",
+    "desc": "Pepe en primer plano con ojos gigantes llenos de pánico; expresa terror máximo.",
+    "partes": [
+      [
+        "monka",
+        "rana nerviosa"
+      ],
+      [
+        "OMEGA",
+        "última letra griega"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "CASES": {
+    "def": "streamer sosteniendo pistola de juego",
+    "desc": "Jugador apuntando con arma de utilería; meme de abrir cajas en Counter-Strike.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Drained": {
+    "def": "carita amarilla sin energía",
+    "desc": "Emoticono pixelado con ojos caídos y gesto agotado; se usa cuando no quedan fuerzas.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "PAUSE": {
+    "def": "cara naranja achatada esperando",
+    "desc": "Emote naranja muy aplastado con gesto tenso; se usa cuando una frase se malinterpreta.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Igotmyeyesonyou": {
+    "def": "rana señalando sus ojos al frente",
+    "desc": "Pepe indicando que está vigilando de cerca; se usa para avisar que no pierdes detalle.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "CLAP": {
+    "def": "dos manos blancas aplaudiendo",
+    "desc": "Manos de caricatura dando palmas enérgicas; se usa para felicitar o celebrar.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "RUNN": {
+    "def": "esqueleto corriendo a toda prisa",
+    "desc": "Esqueleto en 3D huyendo rápido; se usa cuando toca escapar de un peligro en el juego.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "nyanPls": {
+    "def": "chica de anime tocando flauta",
+    "desc": "Personaje de anime con coletas tocando una flauta dulce; se usa con música alegre.",
+    "partes": [
+      [
+        "nyan",
+        "maullido japonés"
+      ],
+      [
+        "Pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BurnEvidence": {
+    "def": "patito con gafas quemando papeles",
+    "desc": "Pato con sombrero y lentes oscuros destruyendo un documento; se usa para borrar rastros en broma.",
+    "partes": [
+      [
+        "Burn",
+        "quemar, en inglés"
+      ],
+      [
+        "Evidence",
+        "pruebas, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  }
+}

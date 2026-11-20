@@ -1,0 +1,342 @@
+{
+  "Latege": {
+    "def": "rana mirando el reloj con fastidio",
+    "desc": "Pepe observando su muñeca; se usa cuando el directo comienza más tarde de lo esperado.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "AAAA": {
+    "def": "hombre de traje gritando con arma",
+    "desc": "Escena dramática de serie británica gritando al límite; se usa ante desesperación total.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoLeave": {
+    "def": "ranita saliendo por la derecha",
+    "desc": "Peepo dándose la vuelta para marcharse; se usa al despedirse del chat.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Leave",
+        "salir, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Hmmmge": {
+    "def": "rana tapándose la boca pensativa",
+    "desc": "Pepe reflexionando con la mano en el mentón; se usa cuando algo da que pensar.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "MicroTime": {
+    "def": "aparato de canto con notas",
+    "desc": "Micrófono pixelado rodeado de notas musicales; se usa cuando alguien canta en directo.",
+    "partes": [
+      [
+        "Micro",
+        "aparato de voz, abreviado"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "noseTime": {
+    "def": "pañuelo y nariz roja",
+    "desc": "Objeto pixelado junto a una esquina; efecto cómico para superponer a otros emotes.",
+    "partes": [
+      [
+        "nose",
+        "nariz, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Gladge": {
+    "def": "rana feliz mirando de lado",
+    "desc": "Pepe con sonrisa cálida de perfil; variante alegre de Sadge.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoTogether": {
+    "def": "dos ranitas abrazadas de espaldas",
+    "desc": "Dos Peepos apoyándose mutuamente; expresa compañerismo en el chat.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Together",
+        "juntos, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "MJMJ": {
+    "def": "rana riéndose por lo bajo",
+    "desc": "Pepe con gran sonrisa tapándose la boca con picardía; se usa para risas cómplices.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "TypingTime": {
+    "def": "teclado pixelado echando humo",
+    "desc": "Teclado negro humeando de tanto escribir; se usa cuando el chat teclea sin parar.",
+    "partes": [
+      [
+        "Typing",
+        "escribiendo, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "LEROLERO": {
+    "def": "carita amarilla haciendo burla",
+    "desc": "Emoticono tocándose la nariz con las manos en gesto burlón; se usa para provocar en broma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "HOLAAAAA": {
+    "def": "cara naranja gritando con saludo",
+    "desc": "Emote naranja eufórico levantando una mano amarilla; saludo muy ruidoso del chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "GAAG": {
+    "def": "cara naranja con ojos cerrados gritando",
+    "desc": "Emote naranja redondo abriendo enorme la boca; se usa para risas o gritos exagerados.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "MUUM": {
+    "def": "cara naranja boca arriba gritando",
+    "desc": "Variante invertida y deformada de GAAG; se usa en momentos de caos divertido.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "bauloCoomer": {
+    "def": "streamer en silla mirando asombrado",
+    "desc": "El streamer girando la cabeza con expresión intensa; emote interno del canal.",
+    "partes": [
+      [
+        "baulo",
+        "nombre del streamer"
+      ],
+      [
+        "Coomer",
+        "meme de internet"
+      ]
+    ],
+    "flag": "nsfw"
+  },
+  "cum": {
+    "def": "salpicadura blanca transparente",
+    "desc": "Manchas blancas cayendo en pantalla; efecto de broma subido de tono.",
+    "partes": null,
+    "flag": "nsfw"
+  },
+  "REALLY": {
+    "def": "carita amarilla seria mirando fijo",
+    "desc": "Emoji en 3D con expresión de fastidio contenido; se usa para preguntar si hablan en serio.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SoConcerned": {
+    "def": "rostro blanco muy preocupado",
+    "desc": "Dibujo en blanco y negro con mirada inquieta; se usa cuando algo genera mala espina.",
+    "partes": [
+      [
+        "So",
+        "tan, en inglés"
+      ],
+      [
+        "Concerned",
+        "preocupado, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BoneDespair": {
+    "def": "esqueleto encorvado desconsolado",
+    "desc": "Esqueleto apoyado en la pared abatido; versión ósea de la desesperación.",
+    "partes": [
+      [
+        "Bone",
+        "hueso, en inglés"
+      ],
+      [
+        "Despair",
+        "desesperación, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "lurkin": {
+    "def": "ranita borrosa asomando con gorro",
+    "desc": "Peepo pixelado espiando desde abajo; se usa cuando alguien mira sin escribir.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "ONMYWAY": {
+    "def": "esqueleto marchando decidido",
+    "desc": "Esqueleto en 3D caminando hacia el frente; se usa para decir que ya vas en camino.",
+    "partes": [
+      [
+        "ON",
+        "en, en inglés"
+      ],
+      [
+        "MY",
+        "mi, en inglés"
+      ],
+      [
+        "WAY",
+        "camino, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ApuSipSpin": {
+    "def": "ranita bebiendo de un vaso",
+    "desc": "Apu dando un sorbo girando tranquilo; se usa para ver drama con calma.",
+    "partes": [
+      [
+        "Apu",
+        "ranita dibujada"
+      ],
+      [
+        "Sip",
+        "sorbo, en inglés"
+      ],
+      [
+        "Spin",
+        "giro, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "CheeseTime": {
+    "def": "ratón y cuña amarilla pixelados",
+    "desc": "Trozo de queso pixelado frente a un personaje; se usa en bromas o estrategias fáciles.",
+    "partes": [
+      [
+        "Cheese",
+        "queso, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ThatsThePoint": {
+    "def": "rostro burlón fumando tranquilo",
+    "desc": "Cara en blanco y negro con cigarrillo y sonrisa satisfecha; se usa cuando aciertas el motivo.",
+    "partes": [
+      [
+        "Thats",
+        "ese es, en inglés"
+      ],
+      [
+        "The",
+        "el, en inglés"
+      ],
+      [
+        "Point",
+        "punto, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "WhatNow": {
+    "def": "rana cansada frente al monitor",
+    "desc": "Pepe en la oscuridad mirando la pantalla con ojeras; se usa cuando ya no queda nada por hacer.",
+    "partes": [
+      [
+        "What",
+        "qué, en inglés"
+      ],
+      [
+        "Now",
+        "ahora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "DIESOFPASTA": {
+    "def": "perro tendido bajo texto repetido",
+    "desc": "Perro desplomado sobre un bloque de texto en el chat; se usa ante mensajes copiados y pegados.",
+    "partes": [
+      [
+        "DIES",
+        "muere, en inglés"
+      ],
+      [
+        "OF",
+        "de, en inglés"
+      ],
+      [
+        "PASTA",
+        "texto copiado del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "maradonaPls": {
+    "def": "astro argentino bailando en cancha",
+    "desc": "Diego Maradona con chaqueta azul moviéndose en el campo; clásico de festejo futbolero.",
+    "partes": [
+      [
+        "maradona",
+        "leyenda del fútbol argentino"
+      ],
+      [
+        "Pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "GETOUTTAHERE": {
+    "def": "jugador con gafas echando a alguien",
+    "desc": "Personaje de chaleco rojo señalando la salida con el pulgar; se usa para mandar fuera en broma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "haciendoelworklikeriri": {
+    "def": "chica bailando bajo luces moradas",
+    "desc": "Escena de baile nocturno bajo focos violáceos; meme musical del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "DonoTime": {
+    "def": "moneda y billete restando diez",
+    "desc": "Ícono pixelado con menos diez dólares; se usa cuando alguien envía una donación.",
+    "partes": [
+      [
+        "Dono",
+        "donación, abreviado"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "VEGETA": {
+    "def": "guerrero saiyajin bajo la lluvia",
+    "desc": "Vegeta mirando al cielo bajo la lluvia; se usa para tristeza épica o derrota dramática.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "RESETTING": {
+    "def": "rana agotada en marco verde",
+    "desc": "Pepe cansado dentro de un recuadro brillante; se usa cuando toca reiniciar una partida o speedrun.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "CalcLife": {
+    "def": "ranita ante atardecer con ojo",
+    "desc": "Peepo mirando un ojo de Ender en el horizonte; meme de cálculos en speedruns de Minecraft.",
+    "partes": [
+      [
+        "Calc",
+        "cuenta matemática, abreviada"
+      ],
+      [
+        "Life",
+        "vida, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Aware": {
+    "def": "rostro inquieto al darse cuenta",
+    "desc": "Cara en blanco y negro con expresión perturbada; se usa al caer en la cuenta de algo oscuro.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SPEEDERS": {
+    "def": "rana con sonrisa tensa",
+    "desc": "Pepe apretando los dientes con ojos muy abiertos; expresa prisa o nerviosismo acelerado.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoSass": {
+    "def": "ranita con actitud presumida",
+    "desc": "Peepo con pestañas y gesto altivo; se usa para responder con ironía o descaro.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Sass",
+        "descaro, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "WAITING": {
+    "def": "hombre mirando fijo a cámara",
+    "desc": "Chico serio sentado en su cuarto sin moverse; se usa cuando el chat espera algo que tarda.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "PaceMan": {
+    "def": "rostro con perla y vara",
+    "desc": "Emote de speedrun de Minecraft con objetos del Nether; se usa cuando la partida va a gran ritmo.",
+    "partes": [
+      [
+        "Pace",
+        "ritmo, en inglés"
+      ],
+      [
+        "Man",
+        "hombre, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "WHO": {
+    "def": "pregunta por una persona",
+    "desc": "Palabra interrogativa con una boca abierta formando la última letra; se usa cuando nadie conoce al mencionado.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "pepeThink": {
+    "def": "rana acariciando la barbilla",
+    "desc": "Pepe llevándose la mano al mentón; se usa cuando alguien reflexiona o duda.",
+    "partes": [
+      [
+        "pepe",
+        "rana de internet"
+      ],
+      [
+        "Think",
+        "pensar, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ICANT": {
+    "def": "emoji cubriéndose la cara de risa",
+    "desc": "Carita amarilla llorando de risa tapándose el rostro; se usa cuando algo da demasiada risa.",
+    "partes": [
+      [
+        "I",
+        "yo, en inglés"
+      ],
+      [
+        "CANT",
+        "no puedo, en inglés sin apóstrofo"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "WHY": {
+    "def": "tortuga cabizbaja lamentándose",
+    "desc": "Tortuga en 3D con la cabeza agachada; se usa para preguntar con lamento por qué pasó algo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoOld": {
+    "def": "ranita con barba blanca",
+    "desc": "Peepo anciano con canas y bigote; se usa cuando algo hace sentir viejo al chat.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Old",
+        "viejo, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "LETSGO": {
+    "def": "cara amarilla gritando euforia",
+    "desc": "Carita gritando con la boca enorme; se usa para festejar con máxima emoción.",
+    "partes": [
+      [
+        "LETS",
+        "vamos, abreviado en inglés"
+      ],
+      [
+        "GO",
+        "ir, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Listening": {
+    "def": "ejecutivo con auriculares atento",
+    "desc": "Patrick Bateman en su oficina con cascos; se usa cuando suena buena música o una buena historia.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "sigma": {
+    "def": "sonrisa segura de ejecutivo",
+    "desc": "Patrick Bateman sonriendo con aire imperturbable; meme para actitudes frías o decididas.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "VS": {
+    "def": "brazos morados listos para pelear",
+    "desc": "Dos puños moviéndose como enfrentamiento; se usa cuando hay un duelo o competencia.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoCheer": {
+    "def": "ranita agitando pompones",
+    "desc": "Peepo animando con pompones amarillos; se usa para alentar al streamer.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Cheer",
+        "animar, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "SigmaArrive": {
+    "def": "ejecutivo caminando decidido",
+    "desc": "Patrick Bateman avanzando por un pasillo con auriculares; se usa para entradas triunfales.",
+    "partes": [
+      [
+        "Sigma",
+        "letra griega de un meme"
+      ],
+      [
+        "Arrive",
+        "llegar, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Wokege": {
+    "def": "rana despierta en la cama",
+    "desc": "Pepe acostado con los ojos muy abiertos; se usa cuando algo te quita el sueño de golpe.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "NOWAYING": {
+    "def": "joven incrédulo manos en cabeza",
+    "desc": "Chico boquiabierto sujetándose la cabeza; se usa cuando ocurre algo imposible de creer.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "WOOF": {
+    "def": "perro blanco mirando cerca",
+    "desc": "Perro esponjoso acercando el hocico a la cámara; se usa para ladrar en broma o ante perros.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "TROLL": {
+    "def": "cara sonriente en alto contraste",
+    "desc": "Clásico rostro burlón en blanco y negro; se usa cuando alguien hace una broma pesada.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "TrollDespair": {
+    "def": "cara burlona que pierde la sonrisa",
+    "desc": "Rostro clásico volviéndose melancólico; se usa cuando la broma termina en tristeza.",
+    "partes": [
+      [
+        "Troll",
+        "bromista de internet"
+      ],
+      [
+        "Despair",
+        "desesperación, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "TrollAware": {
+    "def": "cara sombría con mirada helada",
+    "desc": "Rostro oscuro mirando fijamente en penumbra; se usa ante revelaciones inquietantes.",
+    "partes": [
+      [
+        "Troll",
+        "bromista de internet"
+      ],
+      [
+        "Aware",
+        "consciente, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Emo": {
+    "def": "carita amarilla con flequillo negro",
+    "desc": "Emoticono serio con pelo oscuro tapando un ojo; se usa ante música o comentarios melancólicos.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SAJ": {
+    "def": "esponja amarilla llorando",
+    "desc": "Bob Esponja triste con una lágrima cayendo; se usa para mostrar pena con humor.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "RapThis": {
+    "def": "mano blanca marcando el compás",
+    "desc": "Mano de caricatura gesticulando al ritmo; se usa cuando alguien rapea o recita rápido.",
+    "partes": [
+      [
+        "Rap",
+        "género musical rimado"
+      ],
+      [
+        "This",
+        "esto, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "imNOTcrying": {
+    "def": "rana conteniendo lágrimas",
+    "desc": "Pepe con los ojos llenos de lágrimas intentando disimular; se usa en momentos emotivos.",
+    "partes": [
+      [
+        "im",
+        "yo soy, abreviado en inglés"
+      ],
+      [
+        "NOT",
+        "no, en inglés"
+      ],
+      [
+        "crying",
+        "llorando, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Sure": {
+    "def": "rana asintiendo con sarcasmo",
+    "desc": "Pepe con media sonrisa escéptica; se usa para dar la razón sin creerlo del todo.",
+    "partes": null,
+    "flag": "ok"
+  }
+}

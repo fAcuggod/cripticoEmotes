@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Críptico Emotes — El críptico diario de los emotes 7TV de baulo</title>
+    <meta
+      name="description"
+      content="Adivina cada día el emote 7TV del canal de Kick de baulo a partir de una pista críptica. Cinco intentos, pistas interactivas y estadísticas locales."
+    />
+    <meta name="theme-color" content="#E2F5DC" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:ital,wdth,wght@0,75..125,200..700;1,75..125,200..700&family=Mozilla+Text:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#stage">Saltar al contenido</a>
+
+    <div class="hub">
+      <aside class="sidebar" aria-label="Navegación principal">
+        <div class="sb-top">
+          <div class="sb-header-group">
+            <div class="sb-top-label" id="sb-date">Cargando fecha…</div>
+            <h1 class="sb-title" id="sb-brand">
+              <span class="sb-brand-mark" aria-hidden="true"></span>
+              <span>Críptico <em>Emotes</em></span>
+            </h1>
+            <div class="sb-channel-pills">
+              <a
+                class="pill pill-kick"
+                href="https://kick.com/baulo"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Abrir el canal de baulo en Kick"
+              >
+                <span class="pill-dot" aria-hidden="true"></span>
+                Kick · baulo
+              </a>
+              <a
+                class="pill pill-7tv"
+                href="https://7tv.app/users/01FT80E0280001E12995B11F56"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ver el set completo de emotes de baulo en 7TV"
+              >
+                7TV
+              </a>
+            </div>
+          </div>
+
+          <div class="sb-meta-bar">
+            <div class="sb-links">
+              <button type="button" class="sb-link-btn" id="btn-open-howto" aria-label="Cómo se juega">
+                <span class="sb-link-icon" id="ico-sb-howto" aria-hidden="true"></span>
+                <span class="sb-link-txt">Cómo jugar</span>
+              </button>
+              <button type="button" class="sb-link-btn" id="btn-open-stats" aria-label="Estadísticas">
+                <span class="sb-link-icon" id="ico-sb-stats" aria-hidden="true"></span>
+                <span class="sb-link-txt">Estadísticas</span>
+              </button>
+            </div>
+
+            <button
+              type="button"
+              class="sb-streak"
+              id="sb-streak"
+              title="Ver racha y estadísticas"
+              aria-label="Ver racha y estadísticas"
+            >
+              <span class="sb-streak-flame" id="sb-streak-flame" aria-hidden="true"></span>
+              <span class="sb-streak-num" id="sb-streak-num">0</span>
+              <span class="sb-streak-label">racha</span>
+            </button>
+          </div>
+        </div>
+
+        <nav class="sb-nav" id="sb-nav" aria-label="Secciones">
+          <div class="sb-nav-indicator" id="sb-nav-indicator" aria-hidden="true"></div>
+          <div class="sb-nav-items" id="sb-nav-items">
+            <button type="button" class="sb-nav-item active" data-nav="play">
+              <span class="sb-nav-ico" id="ico-nav-play" aria-hidden="true"></span>
+              <span>Críptico</span>
+            </button>
+            <button type="button" class="sb-nav-item" data-nav="archive">
+              <span class="sb-nav-ico" id="ico-nav-archive" aria-hidden="true"></span>
+              <span>Archivo</span>
+            </button>
+            <button type="button" class="sb-nav-item" data-nav="stats">
+              <span class="sb-nav-ico" id="ico-nav-stats" aria-hidden="true"></span>
+              <span>Rachas</span>
+            </button>
+            <button type="button" class="sb-nav-item" data-nav="howto">
+              <span class="sb-nav-ico" id="ico-nav-howto" aria-hidden="true"></span>
+              <span>Guía</span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="sb-bottom">
+          <p class="sb-note">
+            Todas las respuestas pertenecen al set de emotes <strong>7TV</strong> del canal de Kick
+            <strong>baulo</strong>.
+          </p>
+          <div class="sb-ext-links">
+            <a href="https://7tv.app/users/01FT80E0280001E12995B11F56" target="_blank" rel="noopener noreferrer">
+              Set 7TV de baulo ↗
+            </a>
+            <a href="https://kick.com/baulo" target="_blank" rel="noopener noreferrer">
+              Canal en Kick ↗
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <main id="stage" class="stage" tabindex="-1">
+        <div class="daytabs" id="daytabs" role="tablist" aria-label="Días recientes"></div>
+
+        <div class="stage-body">
+          <div class="game-mount" id="game-mount">
+            <div class="cr-loading">Cargando acertijo del día…</div>
+          </div>
+
+          <div class="stage-footer">
+            <button type="button" class="stage-footer-link" id="link-aprende">
+              <span class="sf-ico" id="ico-sf-book" aria-hidden="true"></span>
+              Aprende a jugar
+            </button>
+            <a
+              class="stage-footer-link"
+              href="https://7tv.app/users/01FT80E0280001E12995B11F56"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="sf-ico" id="ico-sf-7tv" aria-hidden="true"></span>
+              Ver emotes de baulo en 7TV
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <section class="sobre" aria-labelledby="sobre-heading">
+      <div class="sobre-in">
+        <h2 id="sobre-heading">Críptico Emotes: acertijos diarios del chat de baulo</h2>
+        <p>
+          Cada día aparece una nueva pista críptica cuya solución es siempre el nombre exacto de un
+          emote de <strong>7TV</strong> del canal de Kick de <strong>baulo</strong> (tanto nombres
+          alfabéticos como emotes numéricos tipo <code>44</code> o <code>99</code>, sin distinguir
+          mayúsculas ni minúsculas).
+        </p>
+        <h3>Cómo se juega</h3>
+        <p>
+          Toda pista tiene dos caminos hacia el mismo emote: una <strong>definición</strong> (qué
+          muestra o cómo se usa en el chat) y un <strong>juego de palabras</strong> con un indicador
+          (como «revolviendo», «al revés», «oculto en» o «al juntar») que señala qué hacer con el
+          material. El número entre paréntesis indica cuántas letras o cifras tiene la respuesta.
+          Tienes 5 intentos y pistas interactivas para resaltar cada parte o revelar caracteres.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-in">
+        <div class="footer-brand">
+          <span class="footer-logo">Críptico Emotes</span>
+          <span class="footer-badge">Kick · 7TV</span>
+        </div>
+        <div class="footer-links">
+          <button type="button" class="footer-link-btn" id="footer-howto">Cómo se juega</button>
+          <a href="https://7tv.app/users/01FT80E0280001E12995B11F56" target="_blank" rel="noopener noreferrer">
+            7TV de baulo
+          </a>
+          <a href="https://kick.com/baulo" target="_blank" rel="noopener noreferrer">Kick de baulo</a>
+          <a href="https://criptico.es" target="_blank" rel="noopener noreferrer">Inspirado en criptico.es</a>
+        </div>
+        <div class="footer-copy" id="footer-meta">
+          Proyecto fan sin fines de lucro · Progreso guardado localmente en tu navegador.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal: Cómo se juega -->
+    <div class="modal-overlay" id="howto-overlay" role="dialog" aria-modal="true" aria-labelledby="howto-title">
+      <div class="modal wide" id="howto-modal">
+        <button type="button" class="modal-close" data-close="howto" aria-label="Cerrar"></button>
+        <h2 class="modal-title" id="howto-title">Cómo se juega</h2>
+        <div class="howto-body">
+          <p class="modal-text">
+            Adivina el <strong>emote 7TV</strong> del día perteneciente al canal de Kick de
+            <strong>baulo</strong>. No importan las mayúsculas ni las minúsculas: por ejemplo,
+            <code>catJAM</code> y <code>CATJAM</code> cuentan igual. También participan emotes
+            compuestos solo por números (como <code>44</code> o <code>99</code>).
+          </p>
+
+          <div class="gc-anatomy">
+            <div class="gc-example">
+              <span class="cr-parte" style="--c:#1E6B3C">Rana abatida con mirada baja</span>
+              <span class="cr-parte" style="--c:#B85C00">leída al revés en</span>
+              <span class="cr-parte" style="--c:#9B2D21">«egdas»</span> (5)
+              <div class="gc-example-ans">Solución: <strong>Sadge</strong></div>
+            </div>
+            <div class="gc-anatomy-row">
+              <span class="gc-tag def">Definición</span>
+              <span class="gc-anatomy-text">
+                Describe qué se ve en el emote o cómo se usa en el chat.
+              </span>
+            </div>
+            <div class="gc-anatomy-row">
+              <span class="gc-tag ind">Indicador</span>
+              <span class="gc-anatomy-text">
+                Avisa qué operación aplicar: anagrama («revolviendo»), inversión («al revés»),
+                oculto («dentro de»), iniciales, charada («al juntar») u operación numérica.
+              </span>
+            </div>
+            <div class="gc-anatomy-row">
+              <span class="gc-tag mat">Material</span>
+              <span class="gc-anatomy-text">
+                Las letras, palabras o cifras con las que se construye el nombre del emote.
+              </span>
+            </div>
+          </div>
+
+          <h3 class="howto-sub">Reglas y pistas</h3>
+          <ul class="howto-list">
+            <li>Tienes <strong>5 intentos</strong> para acertar cada acertijo diario.</li>
+            <li>
+              Puedes usar las pistas interactivas (<strong>Definición</strong>,
+              <strong>Indicador</strong>, <strong>Material</strong> y
+              <strong>Revelar letra/cifra</strong>) siempre que quieras; cada pista usada
+              descuenta 10 puntos de la puntuación máxima de 100.
+            </li>
+            <li>
+              Al resolver el acertijo —o al agotar los intentos— se revela la imagen real del emote
+              en 7TV junto con su explicación completa.
+            </li>
+            <li>
+              Los emotes más usados en el chat de <strong>baulo</strong> y los clásicos del canal
+              tienen prioridad en el calendario diario.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Archivo -->
+    <div class="modal-overlay" id="archivo-overlay" role="dialog" aria-modal="true" aria-labelledby="archivo-title">
+      <div class="modal wide" id="archivo-modal">
+        <button type="button" class="modal-close" data-close="archivo" aria-label="Cerrar"></button>
+        <h2 class="modal-title" id="archivo-title">Archivo</h2>
+        <div class="ar-vistas" id="archivo-vistas" role="tablist">
+          <button type="button" class="ar-tab active" data-view="cal" role="tab" aria-selected="true">
+            Calendario
+          </button>
+          <button type="button" class="ar-tab" data-view="lista" role="tab" aria-selected="false">
+            Lista
+          </button>
+        </div>
+
+        <div id="archivo-cal-wrap">
+          <div class="ar-cal-head">
+            <button type="button" class="ar-cal-nav" id="archivo-prev" aria-label="Mes anterior">‹</button>
+            <div class="ar-cal-mes" id="archivo-mes"></div>
+            <button type="button" class="ar-cal-nav" id="archivo-next" aria-label="Mes siguiente">›</button>
+          </div>
+          <div class="ar-cal-grid ar-cal-sem" aria-hidden="true">
+            <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+          </div>
+          <div class="ar-cal-grid" id="archivo-dias"></div>
+          <div class="ar-legend">
+            <span><i class="ar-dot-leg won"></i> Resuelto</span>
+            <span><i class="ar-dot-leg lost"></i> Fallado</span>
+            <span><i class="ar-dot-leg sel"></i> Seleccionado</span>
+          </div>
+        </div>
+
+        <div id="archivo-lista-wrap" hidden>
+          <input
+            type="search"
+            id="archivo-buscar"
+            class="ar-search"
+            placeholder="Buscar por número, pista o dificultad…"
+            aria-label="Buscar en el archivo"
+          />
+          <div class="ar-filtros" id="archivo-filtros">
+            <button type="button" class="ar-chip" data-filter="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="ar-chip" data-filter="Fácil" aria-pressed="false">Fácil</button>
+            <button type="button" class="ar-chip" data-filter="Medio" aria-pressed="false">Medio</button>
+            <button type="button" class="ar-chip" data-filter="Difícil" aria-pressed="false">Difícil</button>
+            <button type="button" class="ar-chip" data-filter="numerico" aria-pressed="false">Numéricos</button>
+            <button type="button" class="ar-chip" data-filter="pendiente" aria-pressed="false">Sin jugar</button>
+          </div>
+          <div class="ar-cuenta" id="archivo-cuenta"></div>
+          <div class="ar-lista" id="archivo-lista"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Estadísticas y Rachas -->
+    <div class="modal-overlay" id="stats-overlay" role="dialog" aria-modal="true" aria-labelledby="stats-title">
+      <div class="modal wide" id="stats-modal">
+        <button type="button" class="modal-close" data-close="stats" aria-label="Cerrar"></button>
+        <h2 class="modal-title" id="stats-title">Tus rachas y estadísticas</h2>
+        <div id="stats-content"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+{
+  "JAM": {
+    "def": "chicos con radiocasete en transporte",
+    "desc": "Escena clásica escuchando música con un equipo portátil; se usa ante grandes temas.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "ssg": {
+    "def": "piedra luminosa sobre altar en juego",
+    "desc": "Escena de speedrun de Minecraft con bloques de piedra; sigla de semilla fija.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "TADEGORDO": {
+    "def": "joven con cascos mirando tranquilo",
+    "desc": "Chico con auriculares sentado frente a su cámara; meme de broma del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "tadepelao": {
+    "def": "chico rapado con auriculares serio",
+    "desc": "Fotomontaje sin pelo frente a la webcam; variante cómica de la comunidad.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "TADEVIH": {
+    "def": "chico rapado con mirada intensa",
+    "desc": "Variante editada mirando serio a cámara con cascos; meme interno del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "NicePortal": {
+    "def": "arco de obsidiana mal armado",
+    "desc": "Portal morado de Minecraft mal construido; se usa ante fallos tontos en el juego.",
+    "partes": [
+      [
+        "Nice",
+        "bonito, en inglés"
+      ],
+      [
+        "Portal",
+        "entrada mágica"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "YATA": {
+    "def": "futbolista haciendo gesto de cierre",
+    "desc": "Jugador con camiseta albiceleste cortando con la mano; indica que ya terminó todo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "pepeFootsies": {
+    "def": "pie verde con cara de rana",
+    "desc": "Montaje surrealista de Pepe con forma de pie; emote absurdo del chat.",
+    "partes": [
+      [
+        "pepe",
+        "rana de internet"
+      ],
+      [
+        "Footsies",
+        "pies en tono juguetón, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "bropro": {
+    "def": "chica sonriendo mostrando los pies",
+    "desc": "Joven riendo con las plantas de los pies hacia cámara; meme humorístico del chat.",
+    "partes": [
+      [
+        "bro",
+        "hermano, en jerga inglesa"
+      ],
+      [
+        "pro",
+        "profesional, abreviado"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "PawgChamp": {
+    "def": "dos muñecos rojo y azul bailando",
+    "desc": "Personajes pixelados de meme antiguo en pose cómica; emote subido de tono.",
+    "partes": null,
+    "flag": "nsfw"
+  },
+  "peepoStop": {
+    "def": "ranita policía alzando la palma",
+    "desc": "Peepo con uniforme azul deteniendo el tráfico; se usa para pedir que paren algo.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Stop",
+        "alto, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "dansC": {
+    "def": "streamer de azul bailando en estadio",
+    "desc": "Chico con camiseta deportiva haciendo pasos sobre un fondo de cancha; emote festivo.",
+    "partes": [
+      [
+        "dans",
+        "baile del chat"
+      ],
+      [
+        "C",
+        "letra ce"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Speed": {
+    "def": "streamer tapándose la boca atónito",
+    "desc": "Joven en blanco y negro llevándose las manos al rostro por sorpresa.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "sentao": {
+    "def": "gatito blanco apoyado erguido",
+    "desc": "Minino pequeño apoyado tranquilo como una persona; se usa para esperar con calma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "YEEEY": {
+    "def": "tres chicos aplaudiendo felices",
+    "desc": "Grupo de amigos celebrando entusiasmados frente a la cámara; festejo grupal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "muelto": {
+    "def": "gatito gris dormido boca arriba",
+    "desc": "Cachorro felino tendido inmóvil descansando; se usa al quedar agotado o perder.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "TENGOUNPLAN": {
+    "def": "equipo de fútbol reunido en ronda",
+    "desc": "Jugadores argentinos hablando en círculo antes del partido; se usa al tramar una estrategia.",
+    "partes": [
+      [
+        "TENGO",
+        "poseo"
+      ],
+      [
+        "UN",
+        "artículo indefinido"
+      ],
+      [
+        "PLAN",
+        "estrategia"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ANDAPAYABOBO": {
+    "def": "astro argentino molesto en entrevista",
+    "desc": "Lionel Messi mirando de costado en zona mixta; famosa frase mundialista para mandar lejos.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Tacticien": {
+    "def": "técnico calvo dando indicaciones",
+    "desc": "Pep Guardiola señalando con precisión desde el banquillo; se usa ante jugadas ingeniosas.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "AdrianPls": {
+    "def": "chico con lentes bailando en cuarto",
+    "desc": "Joven moviéndose alegre frente a su pared con pósters; emote de baile del canal.",
+    "partes": [
+      [
+        "Adrian",
+        "nombre propio"
+      ],
+      [
+        "Pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "baulopot": {
+    "def": "vasija con rostro del streamer",
+    "desc": "Fotomontaje sonriente de Potge con la cara del streamer; meme propio del canal.",
+    "partes": [
+      [
+        "baulo",
+        "nombre del streamer"
+      ],
+      [
+        "pot",
+        "vasija, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "rahhhhh": {
+    "def": "gatito guerrero con escudo y espada",
+    "desc": "Minino armado listo para la batalla; grito de guerra cómico del chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "bartoD": {
+    "def": "fotomontaje con camiseta azul y oro",
+    "desc": "Edición humorística estilo barto con remera futbolera; meme interno del canal.",
+    "partes": [
+      [
+        "barto",
+        "personaje meme del canal"
+      ],
+      [
+        "D",
+        "letra de"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Chilling": {
+    "def": "carita amarilla con cascos feliz",
+    "desc": "Emoji sonriente escuchando música tranquilo; expresa relajación total.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "cherry": {
+    "def": "mano poniendo fruta roja en pastel",
+    "desc": "Guinda colocada encima de una torta; se usa para el toque final de algo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SCUBA": {
+    "def": "gatito buceando sobre la cama",
+    "desc": "Minino estirando las patitas como si nadara junto a un portátil; meme adorable.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Saltito": {
+    "def": "ranita sonriente dando un brinco",
+    "desc": "Peepo alegre saltando en el lugar; expresa entusiasmo inocente.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "momoClap": {
+    "def": "hombre de traje aplaudiendo serio",
+    "desc": "Streamer argentino de saco dando palmas en un evento; se usa para felicitar con humor.",
+    "partes": [
+      [
+        "momo",
+        "apodo de streamer argentino"
+      ],
+      [
+        "Clap",
+        "aplauso, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "fishing": {
+    "def": "ranita con sombrero lanzando caña",
+    "desc": "Peepo con gorro de pescador sosteniendo una caña; se usa en momentos de pesca o paciencia.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Panic": {
+    "def": "ranita corriendo asustada en círculos",
+    "desc": "Peepo alterado sin saber qué hacer; se usa cuando cunde el caos en el juego.",
+    "partes": null,
+    "flag": "ok"
+  }
+}

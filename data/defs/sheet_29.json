@@ -1,0 +1,308 @@
+{
+  "nomelocreo": {
+    "def": "espectador atónito llevándose manos a boca",
+    "desc": "Aficionado con camiseta azul incrédulo en la grada; expresa asombro total.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "momowaiting": {
+    "def": "streamer de gris mirando serio",
+    "desc": "Creador argentino sentado en su silla esperando tranquilo; se usa durante pausas.",
+    "partes": [
+      [
+        "momo",
+        "apodo de streamer argentino"
+      ],
+      [
+        "waiting",
+        "esperando, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "bKEK": {
+    "def": "streamer sonriendo pícaro en silla",
+    "desc": "El streamer con camiseta a rayas riéndose divertido; versión propia de KEK.",
+    "partes": [
+      [
+        "b",
+        "inicial del streamer"
+      ],
+      [
+        "KEK",
+        "risa del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "EAAAAAAAAA": {
+    "def": "joven riendo señalando a cámara",
+    "desc": "Chico con camiseta deportiva festejando con las manos; exclamación alegre del chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "iaveras": {
+    "def": "astro argentino mirando confiado",
+    "desc": "Lionel Messi mirando de reojo en el campo; se usa como advertencia en broma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "iolovoyadecir": {
+    "def": "streamer sacando lengua con cascos",
+    "desc": "El streamer haciendo gesto travieso antes de hablar; variante del meme del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "bSAD": {
+    "def": "streamer cabizbajo apoyado en mano",
+    "desc": "El streamer con mirada apagada recostado sobre la mesa; versión propia de tristeza.",
+    "partes": [
+      [
+        "b",
+        "inicial del streamer"
+      ],
+      [
+        "SAD",
+        "triste, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "cKEK": {
+    "def": "streamer de gafas riendo contento",
+    "desc": "Creador con barba y lentes sonriendo en directo; versión local de KEK.",
+    "partes": [
+      [
+        "c",
+        "inicial del streamer"
+      ],
+      [
+        "KEK",
+        "risa del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ELARQUERO": {
+    "def": "streamer de gafas reclamando serio",
+    "desc": "Creador con lentes y auriculares quejándose en partido; meme futbolero del chat.",
+    "partes": [
+      [
+        "EL",
+        "artículo masculino"
+      ],
+      [
+        "ARQUERO",
+        "guardameta de fútbol"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Matado": {
+    "def": "rana realista verde agotada",
+    "desc": "Pepe texturizado con expresión rendida y ojos cansados; se usa al terminar destruido.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "neegy": {
+    "def": "estatua dorada de perfil caricaturesco",
+    "desc": "Figura brillante de oro con nariz grande; emote humorístico del chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "saltonsito": {
+    "def": "ranita verde brincando alegre",
+    "desc": "Peepo con sonrisa roja dando brincos; expresa entusiasmo y alegría.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "saltonsilla": {
+    "def": "ranita fucsia dando brincos",
+    "desc": "Versión morada y rosada saltando contenta; pareja colorida de saltonsito.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoFent": {
+    "def": "ranita ondeando bandera blanca",
+    "desc": "Peepo sonriente agitando un estandarte histórico; meme interno del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "bartold": {
+    "def": "niño realista envejecido con canas",
+    "desc": "Versión anciana y arrugada de barto sobre fondo verde; se usa cuando pasa mucho tiempo.",
+    "partes": [
+      [
+        "bart",
+        "personaje amarillo animado"
+      ],
+      [
+        "old",
+        "viejo, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "flagArgentina": {
+    "def": "bandera celeste y blanca con sol",
+    "desc": "Insignia patria sudamericana ondeando; emblema del país del streamer.",
+    "partes": [
+      [
+        "flag",
+        "bandera, en inglés"
+      ],
+      [
+        "Argentina",
+        "país del Río de la Plata"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "xdding": {
+    "def": "rata gris sonriendo con dientes",
+    "desc": "Roedor caricaturesco mostrando dentadura pícara; se usa para risas maliciosas.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "PagRoll": {
+    "def": "boca abierta girando en círculo",
+    "desc": "Variante rotatoria del rostro de asombro; se usa en festejos mareantes.",
+    "partes": [
+      [
+        "Pag",
+        "asombro, en jerga del chat"
+      ],
+      [
+        "Roll",
+        "rodar, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "xddpajita": {
+    "def": "rata gris bajo manta roja",
+    "desc": "Roedor del chat asomando en pose de doble sentido; emote subido de tono.",
+    "partes": null,
+    "flag": "nsfw"
+  },
+  "forsenNugget": {
+    "def": "rostro de streamer en pieza frita",
+    "desc": "Cara de creador sueco editada sobre un bocadillo de pollo; meme absurdo clásico.",
+    "partes": [
+      [
+        "forsen",
+        "famoso streamer sueco"
+      ],
+      [
+        "Nugget",
+        "trocito empanizado, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "bartoL": {
+    "def": "fotomontaje serio con pelo en punta",
+    "desc": "Retrato realista estilo barto con camiseta roja; meme interno del canal.",
+    "partes": [
+      [
+        "barto",
+        "personaje meme del canal"
+      ],
+      [
+        "L",
+        "letra ele"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Campfire": {
+    "def": "hoguera pixelada ardiendo",
+    "desc": "Fuego de campamento en píxeles naranjas; se usa para charlas nocturnas y descanso.",
+    "partes": [
+      [
+        "Camp",
+        "tienda en el bosque, en inglés"
+      ],
+      [
+        "fire",
+        "fuego, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "pTILT": {
+    "def": "joven de rojo mirando fastidiado",
+    "desc": "Chico en silla gamer con luz morada frunciendo el ceño; se usa ante frustración.",
+    "partes": [
+      [
+        "p",
+        "inicial de persona"
+      ],
+      [
+        "TILT",
+        "enojo jugando, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BANGERON": {
+    "def": "fontanero de gorra roja saludando",
+    "desc": "Mario en 3D levantando la mano al ritmo; se usa cuando suena una canción épica.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Aurilla": {
+    "def": "guerrero dorado rodeado de luz",
+    "desc": "Goku transformándose en aura amarilla brillante; se usa cuando alguien sube su nivel.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "FishingTime": {
+    "def": "caña pixelada lanzando anzuelo",
+    "desc": "Caña de pescar en píxeles con hilo colgando; se usa en momentos de pesca o espera.",
+    "partes": [
+      [
+        "Fishing",
+        "pescando, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Fishge": {
+    "def": "pez azul con sonrisa de rana",
+    "desc": "Pez caricaturesco con ojos y boca de Pepe; se usa al hablar de pesca o agua.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "underdans": {
+    "def": "joven de chaqueta bailando alegre",
+    "desc": "Chico con saco a cuadros haciendo pasos sonriente; emote de baile de la comunidad.",
+    "partes": [
+      [
+        "under",
+        "debajo, en inglés"
+      ],
+      [
+        "dans",
+        "baile del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "morty": {
+    "def": "personaje animado de camiseta negra",
+    "desc": "Personaje de ciencia ficción mirando serio con corte rapado; meme del chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "bailesito": {
+    "def": "chico con gorra danzando en cuarto",
+    "desc": "Joven de camiseta oscura moviéndose al compás; se usa para festejar con ritmo.",
+    "partes": null,
+    "flag": "ok"
+  }
+}

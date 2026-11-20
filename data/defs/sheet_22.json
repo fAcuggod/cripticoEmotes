@@ -1,0 +1,299 @@
+{
+  "Hopeless": {
+    "def": "cara blanca apuntándose abatida",
+    "desc": "Dibujo en blanco y negro desesperado; se usa con humor negro cuando todo parece perdido.",
+    "partes": [
+      [
+        "Hope",
+        "esperanza, en inglés"
+      ],
+      [
+        "less",
+        "sin, sufijo en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BOEEE": {
+    "def": "streamer de celeste sorprendido",
+    "desc": "Chico con auriculares inclinando la cabeza incrédulo; expresión rioplatense de asombro.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "davoDance": {
+    "def": "streamer de rojo bailando en cuarto",
+    "desc": "Creador argentino haciendo pasos animados frente a la cámara; se usa en festejos.",
+    "partes": [
+      [
+        "davo",
+        "apodo de streamer argentino"
+      ],
+      [
+        "Dance",
+        "baile, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "cobrixDance": {
+    "def": "streamer de celeste bailando sentado",
+    "desc": "Creador argentino moviendo los hombros al ritmo; se usa cuando suena música festiva.",
+    "partes": [
+      [
+        "cobrix",
+        "apodo de streamer argentino"
+      ],
+      [
+        "Dance",
+        "baile, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "PEAK": {
+    "def": "futbolista gritando con doble rostro",
+    "desc": "Edición energética de un jugador celebrando con manos en la cara; se usa ante algo sublime.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "TWEAK": {
+    "def": "rostro distorsionado con ojos saltones",
+    "desc": "Cara en primer plano mirando enloquecida; se usa cuando alguien pierde la calma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "bartopot": {
+    "def": "vasija dorada con cabeza realista",
+    "desc": "Fusión surrealista de Potge y barto; meme interno del canal.",
+    "partes": [
+      [
+        "barto",
+        "personaje meme del canal"
+      ],
+      [
+        "pot",
+        "vasija, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "STOPFIGHTING": {
+    "def": "lobo triste entre dos sombras",
+    "desc": "Ilustración dramática de un cachorro pidiendo paz; se usa cuando el chat discute.",
+    "partes": [
+      [
+        "STOP",
+        "parar, en inglés"
+      ],
+      [
+        "FIGHTING",
+        "peleando, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BASTAYAAAA": {
+    "def": "futbolista frustrado mirando al cielo",
+    "desc": "Jugador de camiseta azul desesperado en el partido; se usa para pedir que paren algo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "YAAAY": {
+    "def": "tres criaturas amarillas festejando",
+    "desc": "Grupo de Minions aplaudiendo y vitoreando; se usa para celebrar una buena noticia.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "minionplease": {
+    "def": "criatura amarilla con gafas suplicando",
+    "desc": "Minion cerrando los ojos con gesto de ruego; se usa para pedir algo en broma.",
+    "partes": [
+      [
+        "minion",
+        "criatura amarilla de cine"
+      ],
+      [
+        "please",
+        "por favor, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "shinebrightlikeadiamond": {
+    "def": "joven de azul cantando apasionado",
+    "desc": "Chico en salón mirando hacia arriba mientras canta; meme viral de canto dramático.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "chacalitopants": {
+    "def": "prenda beige de vestir",
+    "desc": "Prenda clara flotando sobre fondo blanco; meme absurdo del canal.",
+    "partes": [
+      [
+        "chacalito",
+        "apodo cómico"
+      ],
+      [
+        "pants",
+        "pantalón, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "gatodesanluv": {
+    "def": "minino blanco y negro serio",
+    "desc": "Gato bicolor mirando fijamente a la cámara; mascota querida de la comunidad.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "VIH": {
+    "def": "streamer riendo a carcajadas con cascos",
+    "desc": "Joven con auriculares echando la cabeza atrás entre risas; meme de humor negro del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Susge": {
+    "def": "rana entrecerrando ojos con sospecha",
+    "desc": "Pepe mirando de reojo con desconfianza; el clásico del chat ante algo sospechoso.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "90": {
+    "def": "chico con gorro mirando hacia abajo",
+    "desc": "Joven en silla gamer bajando la mirada serio; emote numérico del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "pepegaMagic": {
+    "def": "rana despistada con varita hechicera",
+    "desc": "Pepega con capa agitando una varita; se usa cuando algo sale bien por pura suerte.",
+    "partes": [
+      [
+        "pepega",
+        "rana despistada del chat"
+      ],
+      [
+        "Magic",
+        "magia, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Suspicious": {
+    "def": "esponja amarilla mirando con recelo",
+    "desc": "Bob Esponja entrecerrando los ojos junto a un cartel; se usa cuando algo no cuadra.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Sitge": {
+    "def": "ranita sentada esperando tranquila",
+    "desc": "Peepo pequeño sentado de cuerpo entero con sonrisa; se usa para esperar pacientemente.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "PotgeL": {
+    "def": "vasija dorada abrazando un corazón",
+    "desc": "Potge sosteniendo un corazón rosa con ternura; versión cariñosa del emote.",
+    "partes": [
+      [
+        "Potge",
+        "vasija sonriente del chat"
+      ],
+      [
+        "L",
+        "inicial de amor en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "nay": {
+    "def": "señal roja de voto negativo",
+    "desc": "Círculo rojo para rechazar una propuesta; pareja contraria de yea.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "yea": {
+    "def": "señal verde de voto afirmativo",
+    "desc": "Círculo verde para aprobar una votación del chat; pareja de nay.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "RING": {
+    "def": "pato negro tocando un timbre",
+    "desc": "Pato Lucas apretando el timbre de una puerta; se usa cuando llega alguien o suena una alerta.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "MaravillosaJugada": {
+    "def": "ajedrecista elogiando un movimiento",
+    "desc": "Hombre junto a un tablero de ajedrez haciendo gesto de admiración; se usa ante un gran plan.",
+    "partes": [
+      [
+        "Maravillosa",
+        "extraordinaria"
+      ],
+      [
+        "Jugada",
+        "movimiento en un juego"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "cerdoDance": {
+    "def": "puerquito rosado bailando contento",
+    "desc": "Puerquito caricaturesco sacudiéndose con los ojos cerrados; se usa para festejar.",
+    "partes": [
+      [
+        "cerdo",
+        "animal de granja"
+      ],
+      [
+        "Dance",
+        "baile, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "YesBoss": {
+    "def": "dos criaturas amarillas cuadrándose",
+    "desc": "Dos Minions haciendo saludo militar obediente; se usa para acatar órdenes en broma.",
+    "partes": [
+      [
+        "Yes",
+        "sí, en inglés"
+      ],
+      [
+        "Boss",
+        "jefe, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "dontcry": {
+    "def": "duende verde burlándose del llanto",
+    "desc": "Personaje verde de Clash Royale fingiendo llorar; se usa para molestar tras ganar.",
+    "partes": [
+      [
+        "dont",
+        "no hagas, en inglés"
+      ],
+      [
+        "cry",
+        "llorar, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "chicken": {
+    "def": "gallina blanca cacareando asustada",
+    "desc": "Pollo de Clash Royale con cresta roja; se usa para llamar cobarde en broma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "KEK": {
+    "def": "hombre con bigote mirando serio",
+    "desc": "El Risitas con expresión seria en primer plano; clásico del humor en directo.",
+    "partes": null,
+    "flag": "ok"
+  }
+}

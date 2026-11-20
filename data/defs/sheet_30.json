@@ -1,0 +1,351 @@
+{
+  "empiezalobueno": {
+    "def": "miniatura llamativa sobre arcoíris",
+    "desc": "Portada colorida de video prometiendo acción; se usa cuando el directo se pone interesante.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "vintemaisvintemaisvintemaisseteB": {
+    "def": "streamer bailando con camiseta oscura",
+    "desc": "El streamer celebrando en su habitación; versión propia del meme numérico en portugués.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "bartDance": {
+    "def": "niño amarillo estirado bailando",
+    "desc": "Bart Simpson en 3D haciendo pasos cómicos; se usa cuando suena música movida.",
+    "partes": [
+      [
+        "bart",
+        "personaje amarillo animado"
+      ],
+      [
+        "Dance",
+        "baile, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "bauloywalter": {
+    "def": "streamer junto a su gato atigrado",
+    "desc": "El streamer con auriculares acompañado de su mascota frente al escritorio.",
+    "partes": [
+      [
+        "baulo",
+        "nombre del streamer"
+      ],
+      [
+        "y",
+        "conjunción"
+      ],
+      [
+        "walter",
+        "gato del streamer"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Chat": {
+    "def": "guerreros de anime reunidos juntos",
+    "desc": "Grupo de héroes de Dragon Ball posando en equipo; representa a toda la audiencia unida.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "MKEK": {
+    "def": "astro argentino mirando serio",
+    "desc": "Lionel Messi observando fijamente en primer plano; versión futbolera de KEK.",
+    "partes": [
+      [
+        "M",
+        "inicial de Messi"
+      ],
+      [
+        "KEK",
+        "risa del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ADIO": {
+    "def": "niño amarillo yéndose junto a valla",
+    "desc": "Bart alejándose de espaldas por el patio; se usa para despedirse con humor.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "WhoAsked": {
+    "def": "monumento dorado con pregunta",
+    "desc": "Letrero cinematográfico preguntando quién pidió opinión; respuesta irónica clásica.",
+    "partes": [
+      [
+        "Who",
+        "quién, en inglés"
+      ],
+      [
+        "Asked",
+        "preguntó, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "bartinaold": {
+    "def": "retrato femenino envejecido con canas",
+    "desc": "Versión anciana de bartina sobre fondo verde; meme sobre esperas eternas.",
+    "partes": [
+      [
+        "bartina",
+        "personaje femenino meme"
+      ],
+      [
+        "old",
+        "viejo, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BurgerTime": {
+    "def": "personaje junto a emparedado pixelado",
+    "desc": "Hamburguesa pixelada lista para devorar; se usa cuando alguien tiene hambre o cena.",
+    "partes": [
+      [
+        "Burger",
+        "hamburguesa, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "lahasliado": {
+    "def": "miniatura con flecha roja regañando",
+    "desc": "Portada viral señalando un error frente al televisor; se usa cuando alguien arruina algo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "ysisi": {
+    "def": "hechicero levantando un dedo serio",
+    "desc": "Doctor Strange mostrando el único futuro posible; se usa cuando algo era inevitable.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "LOCAMBIATODO": {
+    "def": "portada dividida con villano azul",
+    "desc": "Miniatura dramática anunciando un giro radical; se usa con humor ante cambios mínimos.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "MIREACCION": {
+    "def": "portada de youtuber con ojos azules",
+    "desc": "Miniatura exagerada entre fuego y rayos; se usa para parodiar reacciones dramáticas.",
+    "partes": [
+      [
+        "MI",
+        "posesivo de primera persona"
+      ],
+      [
+        "REACCION",
+        "respuesta ante algo"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "LetterV": {
+    "def": "consonante en pico roja bailando",
+    "desc": "Letra animada con piernas y guantes; sirve para formar palabras en el chat.",
+    "partes": [
+      [
+        "Letter",
+        "letra, en inglés"
+      ],
+      [
+        "V",
+        "letra uve"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "LetterC": {
+    "def": "consonante abierta roja saltando",
+    "desc": "Letra animada con zapatos morados; se combina con otras letras del set.",
+    "partes": [
+      [
+        "Letter",
+        "letra, en inglés"
+      ],
+      [
+        "C",
+        "tercera letra"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "LetterO": {
+    "def": "vocal circular roja con guantes",
+    "desc": "Letra animada bailando; parte de la colección para deletrear en el chat.",
+    "partes": [
+      [
+        "Letter",
+        "letra, en inglés"
+      ],
+      [
+        "O",
+        "cuarta vocal"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "LetterR": {
+    "def": "consonante vibrante roja bailando",
+    "desc": "Letra animada con brazos abiertos; se usa junto a otras letras del canal.",
+    "partes": [
+      [
+        "Letter",
+        "letra, en inglés"
+      ],
+      [
+        "R",
+        "letra erre"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "saltirico": {
+    "def": "muñeco naranja brincando contento",
+    "desc": "Personaje naranja de camiseta negra dando brincos; versión festiva de Saltito.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "catPlsB": {
+    "def": "streamer de blanco imitando baile felino",
+    "desc": "El streamer moviendo los brazos como el gato bailarín; versión propia de catPls.",
+    "partes": [
+      [
+        "cat",
+        "gato, en inglés"
+      ],
+      [
+        "Pls",
+        "por favor, abreviado en inglés"
+      ],
+      [
+        "B",
+        "inicial del streamer"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "SONTODOSBUENOS": {
+    "def": "hombre con gafas agarrándose cabeza",
+    "desc": "Miniatura viral preguntando si todos los juegos son geniales; meme sobre elogios.",
+    "partes": [
+      [
+        "SON",
+        "verbo ser en plural"
+      ],
+      [
+        "TODOS",
+        "la totalidad"
+      ],
+      [
+        "BUENOS",
+        "de gran calidad"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "SnoopB": {
+    "def": "streamer de rayas bailando tranquilo",
+    "desc": "El streamer con camiseta rayada imitando pasos relajados; versión propia de SnoopPls.",
+    "partes": [
+      [
+        "Snoop",
+        "rapero estadounidense"
+      ],
+      [
+        "B",
+        "inicial del streamer"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "mantecoño": {
+    "def": "joven con cascos mirando serio",
+    "desc": "Chico con auriculares en silla gamer mirando de frente; meme interno subido de tono.",
+    "partes": null,
+    "flag": "nsfw"
+  },
+  "Rock": {
+    "def": "carita con lentes haciendo cuernos",
+    "desc": "Emoticono amarillo con gafas oscuras levantando la mano; se usa con música pesada.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "AlienUnpleased": {
+    "def": "extraterrestre verde serio de pie",
+    "desc": "Marciano inmóvil mirando con desaprobación; se usa cuando una broma no hace gracia.",
+    "partes": [
+      [
+        "Alien",
+        "extraterrestre, en inglés"
+      ],
+      [
+        "Unpleased",
+        "descontento, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "PIPIES": {
+    "def": "ranita dando saltos acelerados",
+    "desc": "Peepo pixelado rebotando de emoción; se usa cuando hay mucha energía en el chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoArgentina": {
+    "def": "ranita envuelta en bandera albiceleste",
+    "desc": "Peepo orgulloso cubierto con la bandera del sol; emblema nacional de la comunidad.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Argentina",
+        "país del Río de la Plata"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "AMARILLA": {
+    "def": "persona sacando tarjeta de aviso",
+    "desc": "Gesto arbitral mostrando cartulina clara; se usa como primera advertencia en el chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "ROJA": {
+    "def": "persona sacando tarjeta de expulsión",
+    "desc": "Gesto arbitral mostrando cartulina carmesí; se usa para expulsar o banear en broma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "PETTHEMODS": {
+    "def": "mano acariciando insignia de espada",
+    "desc": "Mano dando mimos al símbolo azul de moderación; agradece la labor de los moderadores.",
+    "partes": [
+      [
+        "PET",
+        "acariciar, en inglés"
+      ],
+      [
+        "THE",
+        "los, en inglés"
+      ],
+      [
+        "MODS",
+        "moderadores, abreviado"
+      ]
+    ],
+    "flag": "ok"
+  }
+}

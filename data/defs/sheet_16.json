@@ -1,0 +1,360 @@
+{
+  "esley": {
+    "def": "chico con sudadera verde",
+    "desc": "Selfie de un chico con sudadera verde mirando a la cámara; se usa para referirse a esley en el chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SUICIDE": {
+    "def": "esqueleto colgado",
+    "desc": "Esqueleto colgando de una cuerda; se usa con humor negro ante algo muy frustrante o vergonzoso.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "DAB": {
+    "def": "gesto de baile con el codo",
+    "desc": "Pepe haciendo el dab, tapándose la cara con el codo; se usa para presumir o celebrar.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SnoopPls": {
+    "def": "rapero californiano bailando",
+    "desc": "Snoop Dogg bailando con ritmo; se usa cuando suena buena música en el stream.",
+    "partes": [
+      [
+        "Snoop",
+        "rapero Dogg"
+      ],
+      [
+        "Pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "zyzzPls": {
+    "def": "culturista australiano bailando",
+    "desc": "Zyzz, el culturista australiano, bailando en tonos dorados; se usa con música de gimnasio o para presumir.",
+    "partes": [
+      [
+        "zyzz",
+        "culturista australiano"
+      ],
+      [
+        "Pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "iguess": {
+    "def": "rana resignada",
+    "desc": "Pepe con cara de resignación; se usa para decir 'supongo' cuando algo da igual o no convence del todo.",
+    "partes": [
+      [
+        "i",
+        "yo, en inglés"
+      ],
+      [
+        "guess",
+        "adivinar, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Spoopy": {
+    "def": "fantasmita gracioso",
+    "desc": "Fantasmita blanco dibujado moviendo los brazos; se usa en tono de broma para algo que da un poco de miedo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoArriveDab": {
+    "def": "ranita llega con estilo",
+    "desc": "Pepe entrando en escena y haciendo un dab; se usa para anunciar la llegada al chat con estilo.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Arrive",
+        "llegar, en inglés"
+      ],
+      [
+        "Dab",
+        "paso de baile con el codo"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "xqcCheer": {
+    "def": "streamer canadiense festejando",
+    "desc": "xQc con auriculares celebrando frente a la cámara; se usa para festejar algo en el stream.",
+    "partes": [
+      [
+        "xqc",
+        "streamer canadiense"
+      ],
+      [
+        "Cheer",
+        "animar, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "AlienVibe": {
+    "def": "extraterrestre verde bailando",
+    "desc": "Alienígena verde bailando relajado; se usa para disfrutar de la música o del buen ambiente.",
+    "partes": [
+      [
+        "Alien",
+        "extraterrestre, en inglés"
+      ],
+      [
+        "Vibe",
+        "onda, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ESBOBO": {
+    "def": "es tonto",
+    "desc": "Hombre gesticulando en su habitación; se usa para decir que alguien es bobo o hizo algo torpe.",
+    "partes": [
+      [
+        "ES",
+        "tercera persona de ser"
+      ],
+      [
+        "BOBO",
+        "tonto"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "NoBrainTime": {
+    "def": "momento sin pensar",
+    "desc": "Cerebro desenchufado de su cable; se usa cuando toca apagar la mente o alguien hace algo sin pensar.",
+    "partes": [
+      [
+        "No",
+        "negación, en inglés"
+      ],
+      [
+        "Brain",
+        "cerebro, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "RetardHandshake": {
+    "def": "ranas dándose un apretón",
+    "desc": "Dos Pepes babeando que se dan la mano; se usa cuando dos personas coinciden en una idea absurda.",
+    "partes": null,
+    "flag": "slur"
+  },
+  "lookUpSoConcerned": {
+    "def": "cara dibujada mirando arriba preocupada",
+    "desc": "Cara de meme dibujada mirando hacia arriba con preocupación; se usa ante algo inquietante.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "lookDownWTF": {
+    "def": "rana mirando abajo asombrada",
+    "desc": "Pepe mirando hacia abajo con cara de incredulidad; se usa ante algo raro escrito más abajo en el chat.",
+    "partes": [
+      [
+        "look",
+        "mirar, en inglés"
+      ],
+      [
+        "Down",
+        "abajo, en inglés"
+      ],
+      [
+        "WTF",
+        "qué demonios, en siglas inglesas"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Alonege": {
+    "def": "rana solitaria",
+    "desc": "Pepe sonriendo sin compañía; se usa para expresar soledad, en serio o en broma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SkeleDancer": {
+    "def": "esqueleto bailarín",
+    "desc": "Esqueleto bailando de forma frenética; se usa para celebrar o acompañar la música.",
+    "partes": [
+      [
+        "Skele",
+        "esqueleto, abreviado en inglés"
+      ],
+      [
+        "Dancer",
+        "bailarín, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "JEJEJE": {
+    "def": "gato riéndose",
+    "desc": "Gato mostrando los dientes como si se riera con picardía; se usa para reírse de algo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoKid": {
+    "def": "ranita con gorra de hélice",
+    "desc": "Pepe sonrojado con gorra de hélice; se usa para hacerse el niño inocente.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Kid",
+        "niño, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "PISS": {
+    "def": "chorro amarillo",
+    "desc": "Chorro amarillo de orina; se usa en broma para algo asqueroso o para mearse de risa.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "WIGGLE": {
+    "def": "rana contoneándose",
+    "desc": "Pepe con capucha moviéndose de lado a lado; se usa para mostrar alegría o burla juguetona.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "JuiceTime": {
+    "def": "hora de tomar jugo",
+    "desc": "Caja de jugo con pajita; se usa para anunciar una pausa para beber algo.",
+    "partes": [
+      [
+        "Juice",
+        "jugo, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "WHISTLING": {
+    "def": "carita silbando",
+    "desc": "Carita amarilla silbando con una nota musical; se usa para disimular o hacerse el desentendido.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "waterTime": {
+    "def": "hora de hidratarse",
+    "desc": "Botella de agua pixelada; se usa para recordar al streamer o al chat que beban agua.",
+    "partes": [
+      [
+        "water",
+        "agua, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Dankgi": {
+    "def": "rana con capucha verde",
+    "desc": "Pepe con capucha puntiaguda verde mirando de reojo; se usa como reacción pícara o desconfiada.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Thinkboutlife": {
+    "def": "mono pensativo en el auto",
+    "desc": "Mono mirando por la ventana de un auto; se usa para reflexionar sobre la vida.",
+    "partes": [
+      [
+        "Think",
+        "pensar, en inglés"
+      ],
+      [
+        "bout",
+        "acerca de, en inglés coloquial"
+      ],
+      [
+        "life",
+        "vida, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "RIPBOZO": {
+    "def": "descansa en paz, payaso",
+    "desc": "Chico con gafas fumando con indiferencia; se usa para despedir con burla a alguien que perdió.",
+    "partes": [
+      [
+        "RIP",
+        "descanse en paz, en siglas"
+      ],
+      [
+        "BOZO",
+        "payaso, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "THEGOAT": {
+    "def": "el mejor de la historia",
+    "desc": "Escena en blanco y negro de dos jóvenes junto a una mesa de ping-pong; se usa para coronar al mejor.",
+    "partes": [
+      [
+        "THE",
+        "el, en inglés"
+      ],
+      [
+        "GOAT",
+        "cabra, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "QUEDICE": {
+    "def": "futbolista desconcertado",
+    "desc": "Futbolista con cara de no entender nada; se usa cuando alguien escribe algo incomprensible.",
+    "partes": [
+      [
+        "QUE",
+        "pronombre interrogativo"
+      ],
+      [
+        "DICE",
+        "habla"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "itstime": {
+    "def": "Ronaldinho mirando al cielo",
+    "desc": "Ronaldinho con la camiseta del Milan levantando la mirada; se usa para decir que llegó el momento.",
+    "partes": [
+      [
+        "its",
+        "es, en inglés contraído"
+      ],
+      [
+        "time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  }
+}

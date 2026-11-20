@@ -1,0 +1,267 @@
+{
+  "COLIBRI": {
+    "def": "delantero celebrando un gol",
+    "desc": "Futbolista con banda roja haciendo su festejo clásico en la cancha; emote futbolero.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "GaygeJAM": {
+    "def": "rana arcoíris con cascos bailando",
+    "desc": "Pepe multicolor moviendo la cabeza con auriculares; se usa para festejar con música.",
+    "partes": [
+      [
+        "Gayge",
+        "rana arcoíris del chat"
+      ],
+      [
+        "JAM",
+        "ritmo musical, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "DinnerTime": {
+    "def": "cubiertos pixelados listos",
+    "desc": "Tenedor y cuchillo dibujados en píxeles; se usa cuando alguien va a cenar o comer.",
+    "partes": [
+      [
+        "Dinner",
+        "cena, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "CumTime": {
+    "def": "copa blanca pixelada",
+    "desc": "Copa de cristal pixelada en mano; emote de broma picante del chat.",
+    "partes": null,
+    "flag": "nsfw"
+  },
+  "FRIKI": {
+    "def": "niño animado pegado al monitor",
+    "desc": "Personaje con auriculares muy metido frente a la computadora; se usa en bromas de vicio extremo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "YUTABT": {
+    "def": "carita con gorra policial y placa",
+    "desc": "Emoji con sombrero de agente mostrando una credencial; se usa para bromear con la policía.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "BAND": {
+    "def": "músicos tocando juntos en fila",
+    "desc": "Grupo de cabezas con guitarras, batería y micrófono; se usa cuando suena una banda genial.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "69": {
+    "def": "streamer sonriendo en silla azul",
+    "desc": "Joven con gorro negro riendo pícaramente frente a cámara; reacción numerada del chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "32": {
+    "def": "chico de blanco festejando sonriente",
+    "desc": "Streamer con camiseta blanca levantando los brazos alegre; emote numérico de celebración.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "34": {
+    "def": "chico moviendo manos agitado",
+    "desc": "Joven con buzo oscuro gesticulando con intensidad frente a cámara; reacción numerada.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "52": {
+    "def": "joven de blanco mirando desconcertado",
+    "desc": "Chico con mirada confundida y labios fruncidos; emote numérico ante algo inexplicable.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "35": {
+    "def": "chico de blanco inclinando cabeza",
+    "desc": "Joven mirando de costado con expresión incrédula; reacción numerada del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "51": {
+    "def": "chico de blanco boquiabierto",
+    "desc": "Joven en silla gamer abriendo enorme la boca de sorpresa; emote numérico de asombro.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "YUTANITA": {
+    "def": "carita con gorra policial y melena",
+    "desc": "Versión femenina con cabello largo y placa policial; emote de broma del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "ElNoSabe": {
+    "def": "rana con sombrero y bigote riendo",
+    "desc": "Pepe con bigote y sombrero ancho riéndose por lo bajo; se usa cuando alguien ignora una sorpresa.",
+    "partes": [
+      [
+        "El",
+        "pronombre masculino"
+      ],
+      [
+        "No",
+        "negación"
+      ],
+      [
+        "Sabe",
+        "conoce algo"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "blodtreil": {
+    "def": "cuadrado rojo sonriente con pulgar",
+    "desc": "Personaje cúbico rojo haciendo señal de aprobación; guiño a Super Meat Boy y BloodTrail.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "CocoArrive": {
+    "def": "perro dorado entrando por puerta",
+    "desc": "La mascota del canal asomando en la habitación; se usa cuando aparece en cámara.",
+    "partes": [
+      [
+        "Coco",
+        "mascota del canal"
+      ],
+      [
+        "Arrive",
+        "llegar, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "omeJam": {
+    "def": "chico con camiseta azul cabeceando",
+    "desc": "Joven sonriente moviéndose con una camiseta de baloncesto; se usa cuando suena buen ritmo.",
+    "partes": [
+      [
+        "ome",
+        "risa, abreviado del chat"
+      ],
+      [
+        "Jam",
+        "ritmo musical, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Lenguita": {
+    "def": "carita amarilla haciendo mueca",
+    "desc": "Emoticono pixelado riendo con la lengua afuera; gesto pícaro o travieso.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "NOSNIFFA": {
+    "def": "perro tapándose el hocico",
+    "desc": "Perro cubriéndose la nariz con la pata; se usa cuando algo huele mal en broma.",
+    "partes": [
+      [
+        "NO",
+        "negación"
+      ],
+      [
+        "SNIFFA",
+        "perro olfateando del chat"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "99": {
+    "def": "chico sacando la lengua burlón",
+    "desc": "Joven con camiseta blanca haciendo una mueca divertida; emote numérico del chat.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "WAT": {
+    "def": "hombre entrecerrando ojos confuso",
+    "desc": "Actor arrugando la frente sin entender nada; se usa ante frases sin sentido.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Down": {
+    "def": "rana mirando hacia abajo curiosa",
+    "desc": "Pepe inclinando los ojos hacia el suelo; reacciona a lo que aparece debajo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Eh": {
+    "def": "chico con cascos mirando serio",
+    "desc": "Joven con auriculares azules observando con confusión; reacción rápida del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SHIVERING": {
+    "def": "carita con gorro temblando de frío",
+    "desc": "Emoticono pixelado abrigado con bufanda tiritando; se usa cuando hace frío o da miedo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "monkeyDance": {
+    "def": "primate bailando de pie",
+    "desc": "Mono de pie moviendo el cuerpo con ritmo; se usa para festejar con música.",
+    "partes": [
+      [
+        "monkey",
+        "mono, en inglés"
+      ],
+      [
+        "Dance",
+        "baile, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Ratge": {
+    "def": "rana con orejas de roedor",
+    "desc": "Pepe transformado en rata con sonrisa pícara; se usa en jugadas tacañas o sigilosas.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoWish": {
+    "def": "ranita juntando manos ilusionada",
+    "desc": "Peepo con ojos brillantes suplicando un deseo; se usa cuando se espera algo con mucha ilusión.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Wish",
+        "deseo, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "urra": {
+    "def": "carita amarilla saltando de júbilo",
+    "desc": "Emoticono pixelado agitando los brazos con gran sonrisa; celebra pequeñas victorias.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "catDespair": {
+    "def": "minino en blanco y negro vacío",
+    "desc": "Gato con mirada sombría y ojos huecos; expresa desolación total.",
+    "partes": [
+      [
+        "cat",
+        "gato, en inglés"
+      ],
+      [
+        "Despair",
+        "desesperación, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  }
+}

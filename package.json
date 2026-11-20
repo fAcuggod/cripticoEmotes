@@ -1,0 +1,18 @@
+{
+  "name": "criptico-emotes",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Críptico Emotes: el críptico diario de los emotes 7TV del canal de baulo.",
+  "scripts": {
+    "dev": "npm run puzzles && vite",
+    "build": "npm run puzzles && vite build",
+    "preview": "vite preview",
+    "puzzles": "node scripts/build-puzzles.mjs",
+    "update-emotes": "node scripts/fetch-emotes.mjs",
+    "check": "node scripts/check-puzzles.mjs"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}

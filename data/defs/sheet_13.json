@@ -1,0 +1,316 @@
+{
+  "amimir": {
+    "def": "gatito acurrucado bajo manta",
+    "desc": "Minino durmiendo tapado con una cobija a cuadros; se usa para irse a dormir.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "SpeedL": {
+    "def": "líneas de impulso hacia la izquierda",
+    "desc": "Trazos cinéticos estilo manga en el borde izquierdo; da efecto de velocidad a otro emote.",
+    "partes": [
+      [
+        "Speed",
+        "velocidad, en inglés"
+      ],
+      [
+        "L",
+        "inicial de izquierda en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "SpeedR": {
+    "def": "líneas de impulso hacia la derecha",
+    "desc": "Trazos cinéticos estilo manga en el borde derecho; pareja de SpeedL para efecto veloz.",
+    "partes": [
+      [
+        "Speed",
+        "velocidad, en inglés"
+      ],
+      [
+        "R",
+        "inicial de derecha en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Dead": {
+    "def": "esqueleto desplomado gris",
+    "desc": "Esqueleto en 3D cayendo sin fuerzas; se usa cuando alguien muere en un juego o de risa.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "ABDULpls": {
+    "def": "hombre con turbante y gafas bailando",
+    "desc": "Hombre sonriente con pañuelo tradicional moviéndose al ritmo; emote clásico de baile.",
+    "partes": [
+      [
+        "ABDUL",
+        "nombre árabe de un meme"
+      ],
+      [
+        "pls",
+        "por favor, abreviado en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Madge": {
+    "def": "rana con el ceño fruncido",
+    "desc": "Pepe enfadado mirando de lado; el emote estándar para mostrar enojo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "MadgeLate": {
+    "def": "rana enojada señalando su reloj",
+    "desc": "Pepe molesto apuntando a la muñeca; se usa cuando el directo empieza tarde.",
+    "partes": [
+      [
+        "Madge",
+        "rana enojada del chat"
+      ],
+      [
+        "Late",
+        "tarde, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "LENGUA": {
+    "def": "chico con lentes y cascos atónito",
+    "desc": "Joven mirando boquiabierto la pantalla con auriculares; emote de reacción del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "EDM": {
+    "def": "barras naranjas de ecualizador",
+    "desc": "Gráfico de sonido subiendo y bajando; se usa cuando suena música electrónica.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "peepoHandsUp": {
+    "def": "ranita con los dos brazos alzados",
+    "desc": "Peepo levantando las manos en señal de euforia o rendición.",
+    "partes": [
+      [
+        "peepo",
+        "ranita"
+      ],
+      [
+        "Hands",
+        "manos, en inglés"
+      ],
+      [
+        "Up",
+        "arriba, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BassTime": {
+    "def": "bajo eléctrico pixelado negro",
+    "desc": "Instrumento de cuatro cuerdas inclinado; se usa cuando destacan las líneas graves de una canción.",
+    "partes": [
+      [
+        "Bass",
+        "bajo musical, en inglés"
+      ],
+      [
+        "Time",
+        "hora, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "shesperfect": {
+    "def": "muñeco de traje deslumbrado",
+    "desc": "Personaje de LEGO con esmoquin mirando fascinado; se usa cuando algo enamora al chat.",
+    "partes": [
+      [
+        "shes",
+        "ella es, abreviado en inglés"
+      ],
+      [
+        "perfect",
+        "impecable, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "MUGA": {
+    "def": "cara naranja gritando con boca enorme",
+    "desc": "Emote naranja muy abierto en un grito cómico; se usa en momentos de locura o música.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Yump": {
+    "def": "ranita de cuerpo entero saltando",
+    "desc": "Peepo verde dando brincos alegres; se usa para celebrar o saltar al ritmo.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "bDANCE": {
+    "def": "chico bailando con luces rosas",
+    "desc": "Joven con gorra y pantalón corto bailando en su cuarto; emote de festejo del canal.",
+    "partes": [
+      [
+        "b",
+        "inicial del streamer"
+      ],
+      [
+        "DANCE",
+        "baile, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "ItsFine": {
+    "def": "dibujo con careta sonriente llorando",
+    "desc": "Personaje intentando ocultar su llanto tras una máscara alegre; se usa para fingir calma.",
+    "partes": [
+      [
+        "Its",
+        "es, en inglés sin apóstrofo"
+      ],
+      [
+        "Fine",
+        "bien, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "BONKTHEMODS": {
+    "def": "martillo golpeando espada verde",
+    "desc": "Mano bajando un martillo sobre el ícono de moderador; broma del chat contra los mods.",
+    "partes": [
+      [
+        "BONK",
+        "golpe cómico, en jerga"
+      ],
+      [
+        "THE",
+        "los, en inglés"
+      ],
+      [
+        "MODS",
+        "moderadores, abreviado"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "bautiquit": {
+    "def": "pestaña cerrándose con equis",
+    "desc": "Cursor cerrando la pestaña del canal; se usa en broma cuando el streamer dice algo polémico.",
+    "partes": [
+      [
+        "bauti",
+        "apodo del streamer"
+      ],
+      [
+        "quit",
+        "salir, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "THEVOICES": {
+    "def": "minino agarrándose la cabeza",
+    "desc": "Gato gris sujetándose las orejas agobiado; se usa en bromas de locura o ruido mental.",
+    "partes": [
+      [
+        "THE",
+        "las, en inglés"
+      ],
+      [
+        "VOICES",
+        "voces, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "HAPPY": {
+    "def": "perro blanco sonriendo de frente",
+    "desc": "Perro mostrando los dientes en una sonrisa enorme; expresa alegría contagiosa.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "ZIDANE": {
+    "def": "técnico francés llevándose mano a frente",
+    "desc": "Zinédine Zidane incrédulo en la banda; se usa ante jugadas imposibles o errores épicos.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "PREDICTING": {
+    "def": "personaje morado entre uno y dos",
+    "desc": "Emote rodeado por opciones uno y dos; se usa cuando abren predicciones de puntos.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "PIPO": {
+    "def": "entrenador sonriendo con micrófono",
+    "desc": "Director técnico argentino gesticulando en entrevista; meme futbolero del canal.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "lookRight": {
+    "def": "rana mirando hacia la derecha",
+    "desc": "Pepe dirigiendo la vista al emote de su derecha en el chat.",
+    "partes": [
+      [
+        "look",
+        "mirar, en inglés"
+      ],
+      [
+        "Right",
+        "derecha, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "lookLeft": {
+    "def": "rana mirando hacia la izquierda",
+    "desc": "Pepe dirigiendo la vista al emote de su izquierda en el chat.",
+    "partes": [
+      [
+        "look",
+        "mirar, en inglés"
+      ],
+      [
+        "Left",
+        "izquierda, en inglés"
+      ]
+    ],
+    "flag": "ok"
+  },
+  "Sus": {
+    "def": "carita amarilla entrecerrando un ojo",
+    "desc": "Emoji mirando con desconfianza y ceja levantada; se usa cuando algo suena dudoso.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Okayge": {
+    "def": "rana sonriendo con calma",
+    "desc": "Pepe contento de perfil mirando al frente; expresa conformidad y buena disposición.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "TICTAC": {
+    "def": "reloj de arena rojo",
+    "desc": "Reloj de arena girando; se usa para marcar que corre el tiempo o viene algo grande.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Knife": {
+    "def": "mano verde sosteniendo hoja blanca",
+    "desc": "Mano de rana empuñando un arma blanca; se combina con otros emotes para amenazar en broma.",
+    "partes": null,
+    "flag": "ok"
+  },
+  "Gun": {
+    "def": "mano verde empuñando pistola",
+    "desc": "Mano de rana sosteniendo una pistola negra; se combina junto a otros emotes del chat.",
+    "partes": null,
+    "flag": "ok"
+  }
+}
